@@ -1,13 +1,11 @@
-% Aman Kansal, Ansh Khurana, Kushagra Juneja
-clc; clear all; close all;
-warning('off', 'all');
+function [out_color, visualisation] = synthesis(input, B)
+% [X, map] = imread(input, 'png');
+% in_color = ind2rgb(X, map);
 
-[X, map] = imread("apples.png", 'png');
-in_color = ind2rgb(X, map);
+in_color = im2double(imread(input, 'png'));
 
 in = rgb2gray(in_color); % grayscale image for algorithm
 [R, C] = size(in);
-B = 40; % block size
 tol = 0.2; % tolerance
 rng('default'); % setting seed
 
@@ -81,7 +79,11 @@ for i=1:r
         end
     end
 end
-
-figure; imshow(in_color); truesize;
-figure; imshow(out_color); truesize;
-figure; imshow(disp_boundary, [0 1]); truesize;
+% 
+% figure; imshow(in_color); truesize;
+% figure; imshow(out_color); truesize;
+visualisation = out_color;
+visualisation(:, :, 1) = visualisation(:, :, 1) + disp_boundary;
+visualisation(:, :, 2) = visualisation(:, :, 2) .* (1-disp_boundary);
+visualisation(:, :, 3) = visualisation(:, :, 3) .* (1-disp_boundary);
+% figure; imshow(visualisation); truesize;
