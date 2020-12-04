@@ -1,17 +1,13 @@
-% Aman Kansal, Ansh Khurana, Kushagra Juneja
-clc; clear all; close all;
-warning('off', 'all');
+function [iter_res] = transfer(texture_path, content_image_path, B, B_decay_rate, num_passes)
 
-X = im2double(imread('data/fabric.png', 'png'));
-T = im2double(imread('data/girl.png', 'png'));
+tol = 0.2; % tolerance
+rng('default'); % setting seed
+boundary_gaussian_variance = 1;
+L = floor(B/3); % overlap length
 
-if length(size(T)) == 2
-    [n_rows,n_cols] = size(T);
-    T_new = zeros(n_rows,n_cols,3);
-    T_new(:,:,1) = T;
-    T_new(:,:,2) = T;
-    T_new(:,:,3) = T;
-end
+
+X = im2double(imread(texture_path, 'png'));
+T = im2double(imread(content_image_path, 'png'));
 
 in_color = X;
 T_color = T;
@@ -25,16 +21,13 @@ end
 [R, C] = size(in);
 [T_R, T_C] = size(T);
 
-B = 10; % block size
-B_decay_rate = 0.75; %decay rate of B
-tol = 0.2; % tolerance
-rng('default'); % setting seed
-num_passes = 5; % number of iterations
-boundary_gaussian_variance = 1;
 
-L = floor(B/3); % overlap length
 out = zeros(T_R, T_C); % output gray image
 out_color = zeros(T_R, T_C, 3); % output color image
+
+
+tsize = size(T_color);
+iter_res = zeros(num_passes, tsize(1), tsize(2), 3);
 
 for pass = 1:num_passes
     overlap_loss_weight = 0.8*(pass-1)/(num_passes-1)+0.1;
@@ -104,8 +97,9 @@ for pass = 1:num_passes
     L = floor(B/3);
     T = out;
 
-    figure; imshow(out_color); truesize;
+    iter_res(pass, :, :, :) = out_color;
 
 end
 
-figure; imshow(in_color); truesize;
+% figure; imshow(in_color); truesize;
+end
