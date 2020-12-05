@@ -6,8 +6,8 @@ warning('off', 'all');
 
 data_path = 'data/';
 results_dir = 'results/bsize/';
-texture_images = {'rice', 'fabric'};
-content_images =  {'bill', 'girl'};
+texture_images = {'orange'};
+content_images =  {'potato', 'banana', 'pear'};
 
 
 % show optimal results over iterations
@@ -26,6 +26,7 @@ for ti = texture_images
             for Bi = 1:length(B_choices)
                 iter_res = transfer(t_path, c_path, B_choices(Bi), B_dr, num_passes);
                 res = squeeze(iter_res(num_passes, :, :, :));
+                imwrite(res, fullfile(results_dir, sprintf('out_%s_B_%d_bdr_%f.png', ti{1}, B_choices(Bi), B_dr)));
                 B_res(Bi, :, :, :) = res;  
             end
             show_res_blocks(B_res, ti{1}, ci{1}, num_passes, B_choices, B_dr, results_dir);

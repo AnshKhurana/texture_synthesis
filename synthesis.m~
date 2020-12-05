@@ -84,8 +84,7 @@ end
 figure; imshow(disp_boundary); truesize;
 visualisation = out_color;
 red_c = visualisation(:, :, 1) + disp_boundary;
-red_c(red_c > 1) = 1;
-visualisation(:, :, 1) = red_c;
+visualisation(:, :, 1)
 visualisation(:, :, 2) = visualisation(:, :, 2) .* (1-disp_boundary);
 visualisation(:, :, 3) = visualisation(:, :, 3) .* (1-disp_boundary);
 % figure; imshow(visualisation); truesize;

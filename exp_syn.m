@@ -4,7 +4,7 @@ warning('off', 'all');
 
 data_path = 'data/';
 results_dir = 'results/syn/';
-texture_images = {'rice', 'fabric'};
+texture_images = {'D1', 'brick_bw', 'text', 'radishes'};
 % texture_images = {'jute', 'apples'};
 
 B_choices=[20, 30, 40, 50];
