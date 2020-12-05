@@ -4,13 +4,13 @@ ti = im2double(imread(t_path, 'png'));
 % [X, map] = imread(t_path, 'png');
 % ti = ind2rgb(X, map);
 
-subplot(1, 3, 1, 'position', [0.2, 0.5, 0.1, 0.1]);
+subplot(1, 3, 1, 'position', [0.25, 0.5, 0.1, 0.1]);
 imshow(ti);
 title('Texture Image');
-subplot(1, 3, 2);
+subplot(1, 3, 2, 'position', [0.37, 0.5, 0.2, 0.2]);
 imshow(res);
 title('Synthesized Image');
-subplot(1, 3, 3);
+subplot(1, 3, 3, 'position', [0.59, 0.5, 0.2, 0.2]);
 imshow(vis);
 title('Min. Error Boundary');
 % sgtitle('Input Images');
