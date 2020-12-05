@@ -3,15 +3,15 @@
 
 clc; clear; close all;
 warning('off', 'all');
-
+tic;
 data_path = 'data/';
 results_dir = 'results/bsize/';
 texture_images = {'orange'};
-content_images =  {'potato', 'banana', 'pear'};
+content_images =  {'potato', 'pear'};
 
 
 % show optimal results over iterations
-B_choices=[10, 20, 30, 40];
+B_choices=[10,20,30,40];
 B_decay_rate_choices = [0.9, 0.8, 0.7];
 num_passes=5;
 for ti = texture_images
@@ -26,10 +26,11 @@ for ti = texture_images
             for Bi = 1:length(B_choices)
                 iter_res = transfer(t_path, c_path, B_choices(Bi), B_dr, num_passes);
                 res = squeeze(iter_res(num_passes, :, :, :));
-                imwrite(res, fullfile(results_dir, sprintf('out_%s_B_%d_bdr_%f.png', ti{1}, B_choices(Bi), B_dr)));
+                imwrite(res, fullfile(results_dir, sprintf('out_%s_%s_B_%d_bdr_%f.png', ti{1}, ci{1}, B_choices(Bi), B_dr)));
                 B_res(Bi, :, :, :) = res;  
             end
             show_res_blocks(B_res, ti{1}, ci{1}, num_passes, B_choices, B_dr, results_dir);
         end
     end
 end
+toc;

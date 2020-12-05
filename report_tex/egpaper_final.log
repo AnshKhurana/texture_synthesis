@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.5)  5 DEC 2020 21:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.5)  5 DEC 2020 23:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -309,6 +309,24 @@ LaTeX Warning: Label `fig:apple_res' multiply defined.
 
 
 LaTeX Warning: Label `sub@fig:apple_res' multiply defined.
+
+
+LaTeX Warning: Label `fig:ap_bs' multiply defined.
+
+
+LaTeX Warning: Label `fig:ap_bs' multiply defined.
+
+
+LaTeX Warning: Label `fig:ap_bs' multiply defined.
+
+
+LaTeX Warning: Label `fig:ap_bs' multiply defined.
+
+
+LaTeX Warning: Label `fig:ap_bs' multiply defined.
+
+
+LaTeX Warning: Label `fig:ap_bs' multiply defined.
 
 )
 \openout1 = `egpaper_final.aux'.
@@ -632,53 +650,170 @@ Package pdftex.def Info: ../results/syn_final/result_stone_B_60.png  used on inp
 
 LaTeX Warning: Float too large for page by 13.43944pt on input line 433.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 463.
+File: ../results/bsize/inp_rice_bill.png Graphic file (type png)
+<use ../results/bsize/inp_rice_bill.png>
+Package pdftex.def Info: ../results/bsize/inp_rice_bill.png  used on input line 440.
+(pdftex.def)             Requested size: 224.22426pt x 125.42894pt.
+
+Overfull \hbox (25.4848pt too wide) in paragraph at lines 440--441
+ [][] 
+ []
+
+<../results/bsize/out_rice_bill_B_20_bdr_0_800000.png, id=93, 231.86626pt x 282.05376pt>
+File: ../results/bsize/out_rice_bill_B_20_bdr_0_800000.png Graphic file (type png)
+<use ../results/bsize/out_rice_bill_B_20_bdr_0_800000.png>
+Package pdftex.def Info: ../results/bsize/out_rice_bill_B_20_bdr_0_800000.png  used on input line 446.
+(pdftex.def)             Requested size: 139.12082pt x 169.23355pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ../results/bsize/inp_rice_girl.png Graphic file (type png)
+<use ../results/bsize/inp_rice_girl.png>
+Package pdftex.def Info: ../results/bsize/inp_rice_girl.png  used on input line 457.
+(pdftex.def)             Requested size: 224.22426pt x 139.65527pt.
+
+Overfull \hbox (0.64047pt too wide) in paragraph at lines 457--458
+ [][] 
+ []
+
+<../results/bsize/out_rice_girl_B_20_bdr_0_700000.png, id=95, 367.3725pt x 556.0775pt>
+File: ../results/bsize/out_rice_girl_B_20_bdr_0_700000.png Graphic file (type png)
+<use ../results/bsize/out_rice_girl_B_20_bdr_0_700000.png>
+Package pdftex.def Info: ../results/bsize/out_rice_girl_B_20_bdr_0_700000.png  used on input line 463.
+(pdftex.def)             Requested size: 146.94638pt x 222.42705pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../results/bsize/inp_text_girl.png, id=96, 562.2606pt x 421.575pt>
+File: ../results/bsize/inp_text_girl.png Graphic file (type png)
+<use ../results/bsize/inp_text_girl.png>
+Package pdftex.def Info: ../results/bsize/inp_text_girl.png  used on input line 474.
+(pdftex.def)             Requested size: 224.22426pt x 139.65527pt.
+
+Overfull \hbox (0.64047pt too wide) in paragraph at lines 474--475
+ [][] 
+ []
+
+<../results/bsize/out_text_girl_B_10_bdr_0_700000.png, id=98, 367.3725pt x 556.0775pt>
+File: ../results/bsize/out_text_girl_B_10_bdr_0_700000.png Graphic file (type png)
+<use ../results/bsize/out_text_girl_B_10_bdr_0_700000.png>
+Package pdftex.def Info: ../results/bsize/out_text_girl_B_10_bdr_0_700000.png  used on input line 480.
+(pdftex.def)             Requested size: 146.94638pt x 222.42705pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../results/bsize/inp_fabric_girl.png, id=99, 562.2606pt x 421.575pt>
+File: ../results/bsize/inp_fabric_girl.png Graphic file (type png)
+<use ../results/bsize/inp_fabric_girl.png>
+Package pdftex.def Info: ../results/bsize/inp_fabric_girl.png  used on input line 491.
+(pdftex.def)             Requested size: 224.22426pt x 139.65527pt.
+
+Overfull \hbox (0.64047pt too wide) in paragraph at lines 491--492
+ [][] 
+ []
+
+<../results/bsize/out_fabric_girl_B_10_bdr_0_800000.png, id=101, 367.3725pt x 556.0775pt>
+File: ../results/bsize/out_fabric_girl_B_10_bdr_0_800000.png Graphic file (type png)
+<use ../results/bsize/out_fabric_girl_B_10_bdr_0_800000.png>
+Package pdftex.def Info: ../results/bsize/out_fabric_girl_B_10_bdr_0_800000.png  used on input line 497.
+(pdftex.def)             Requested size: 146.94638pt x 222.42705pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ../results/bsize/inp_orange_pear.png Graphic file (type png)
+<use ../results/bsize/inp_orange_pear.png>
+Package pdftex.def Info: ../results/bsize/inp_orange_pear.png  used on input line 508.
+(pdftex.def)             Requested size: 224.22426pt x 111.20259pt.
+
+Overfull \hbox (0.64047pt too wide) in paragraph at lines 508--509
+ [][] 
+ []
+
+<../results/bsize/out_orange_pear_B_20_bdr_0_800000.png, id=103, 261.97874pt x 170.6375pt>
+File: ../results/bsize/out_orange_pear_B_20_bdr_0_800000.png Graphic file (type png)
+<use ../results/bsize/out_orange_pear_B_20_bdr_0_800000.png>
+Package pdftex.def Info: ../results/bsize/out_orange_pear_B_20_bdr_0_800000.png  used on input line 514.
+(pdftex.def)             Requested size: 104.78964pt x 68.25378pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../results/bsize/inp_orange_potato.png, id=104, 562.2606pt x 421.575pt>
+File: ../results/bsize/inp_orange_potato.png Graphic file (type png)
+<use ../results/bsize/inp_orange_potato.png>
+Package pdftex.def Info: ../results/bsize/inp_orange_potato.png  used on input line 525.
+(pdftex.def)             Requested size: 224.22426pt x 111.20259pt.
+
+Overfull \hbox (0.64047pt too wide) in paragraph at lines 525--526
+ [][] 
+ []
+
+<../results/bsize/out_orange_potato_B_10_bdr_0_700000.png, id=106, 247.92625pt x 166.6225pt>
+File: ../results/bsize/out_orange_potato_B_10_bdr_0_700000.png Graphic file (type png)
+<use ../results/bsize/out_orange_potato_B_10_bdr_0_700000.png>
+Package pdftex.def Info: ../results/bsize/out_orange_potato_B_10_bdr_0_700000.png  used on input line 531.
+(pdftex.def)             Requested size: 99.16873pt x 66.64781pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 565.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.463 \end{document}
+l.565 \end{document}
                      [2
 
  <../results/syn/out_apples_B_20.png (PNG copy)> <../results/syn/out_apples_B_30.png (PNG copy)> <../results/syn/out_apples_B_40.png (PNG copy)> <../results/syn/out_apples_B_50.png (PNG copy)> <../results/syn/out_cans_B_20.png (PNG copy)> <../results/syn/out_cans_B_30.png (PNG copy)> <../results/syn/out_cans_B_40.png (PNG copy)> <../results/syn/out_cans_B_50.png (PNG copy)>]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.463 \end{document}
+l.565 \end{document}
                      [3 <../results/bsize/inp_rice_bill.png (PNG copy)> <../results/bsize/res_rice_bill_bdr_0_800000_iter_5.png (PNG copy)> <../results/iters/res_rice_bill_b_20_bdr_0_800000.png (PNG copy)> <../results/syn/out_brick_bw_B_20.png (PNG copy)> <../results/syn/out_brick_bw_B_30.png (PNG copy)> <../results/syn/out_brick_bw_B_40.png (PNG copy)> <../results/syn/out_brick_bw_B_50.png (PNG copy)>]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.463 \end{document}
+l.565 \end{document}
                      [4 <../results/bsize/inp_rice_girl.png (PNG copy)> <../results/bsize/res_rice_girl_bdr_0_700000_iter_5.png (PNG copy)> <../results/iters/res_rice_girl_b_20_bdr_0_800000.png (PNG copy)>]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.463 \end{document}
+l.565 \end{document}
                      [5 <../results/bsize/inp_orange_pear.png (PNG copy)> <../results/bsize/res_orange_pear_bdr_0_900000_iter_5.png (PNG copy)> <../results/iters/res_orange_pear_b_20_bdr_0_800000.png (PNG copy)>]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.463 \end{document}
-                     [6 <../results/syn_final/result_apples_c_B_40.png (PNG copy)> <../results/syn_final/result_jute_c_B_40.png (PNG copy)> <../results/syn_final/result_cans_B_40.png (PNG copy)> <../results/syn_final/result_brick_bw_B_40.png (PNG copy)> <../results/syn_final/result_text_B_40.png (PNG copy)> <../results/syn_final/result_D1_B_40.png (PNG copy)> <../results/syn_final/result_fabric_B_40.png (PNG copy)> <../results/syn_final/result_radishes_B_40.png (PNG copy)> <../results/syn_final/result_rice_B_40.png (PNG copy)> <../results/syn_final/result_wood_c_B_40.png (PNG copy)> <../results/syn_final/result_tile_B_60.png (PNG copy)> <../results/syn_final/result_brick_B_60.png (PNG copy)> <../results/syn_final/result_rope_B_60.png (PNG copy)> <../results/syn_final/result_br_pattern_B_60.png (PNG copy)> <../results/syn_final/result_stone_B_60.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 463.
+l.565 \end{document}
+                     [6 <../results/syn_final/result_apples_c_B_40.png (PNG copy)> <../results/syn_final/result_jute_c_B_40.png (PNG copy)> <../results/syn_final/result_cans_B_40.png (PNG copy)> <../results/syn_final/result_brick_bw_B_40.png (PNG copy)> <../results/syn_final/result_text_B_40.png (PNG copy)> <../results/syn_final/result_D1_B_40.png (PNG copy)> <../results/syn_final/result_fabric_B_40.png (PNG copy)> <../results/syn_final/result_radishes_B_40.png (PNG copy)> <../results/syn_final/result_rice_B_40.png (PNG copy)> <../results/syn_final/result_wood_c_B_40.png (PNG copy)> <../results/syn_final/result_tile_B_60.png (PNG copy)> <../results/syn_final/result_brick_B_60.png (PNG copy)> <../results/syn_final/result_rope_B_60.png (PNG copy)> <../results/syn_final/result_br_pattern_B_60.png (PNG copy)> <../results/syn_final/result_stone_B_60.png (PNG copy)>]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.565 \end{document}
+                     [7 <../results/bsize/out_rice_bill_B_20_bdr_0_800000.png (PNG copy)> <../results/bsize/out_rice_girl_B_20_bdr_0_700000.png (PNG copy)>]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.565 \end{document}
+                     [8 <../results/bsize/inp_text_girl.png (PNG copy)> <../results/bsize/inp_fabric_girl.png (PNG copy)> <../results/bsize/out_text_girl_B_10_bdr_0_700000.png (PNG copy)> <../results/bsize/out_fabric_girl_B_10_bdr_0_800000.png (PNG copy)>]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.565 \end{document}
+                     [9 <../results/bsize/inp_orange_potato.png (PNG copy)> <../results/bsize/out_orange_pear_B_20_bdr_0_800000.png (PNG copy)> <../results/bsize/out_orange_potato_B_10_bdr_0_700000.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 565.
  (/Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/egpaper_final.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 463.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 463.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 565.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 565.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 463.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 565.
  ) 
 Here is how much of TeX's memory you used:
- 7525 strings out of 492616
- 119123 string characters out of 6129482
- 215739 words of memory out of 5000000
- 11292 multiletter control sequences out of 15000+600000
+ 7576 strings out of 492616
+ 121383 string characters out of 6129482
+ 221735 words of memory out of 5000000
+ 11328 multiletter control sequences out of 15000+600000
  20803 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,10n,39p,841b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on "/Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/egpaper_final.pdf" (6 pages, 6726760 bytes).
+Output written on "/Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/egpaper_final.pdf" (9 pages, 8723233 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
- 27 named destinations out of 1000 (max. 500000)
- 346 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 207 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 427 words of extra memory for PDF output out of 10000 (max. 10000000)
 

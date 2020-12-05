@@ -265,6 +265,39 @@ INPUT ../results/syn_final/result_br_pattern_B_60.png
 INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/syn_final/result_stone_B_60.png
 INPUT ../results/syn_final/result_stone_B_60.png
 INPUT ../results/syn_final/result_stone_B_60.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/inp_rice_bill.png
+INPUT ../results/bsize/inp_rice_bill.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/out_rice_bill_B_20_bdr_0_800000.png
+INPUT ../results/bsize/out_rice_bill_B_20_bdr_0_800000.png
+INPUT ../results/bsize/out_rice_bill_B_20_bdr_0_800000.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/inp_rice_girl.png
+INPUT ../results/bsize/inp_rice_girl.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/out_rice_girl_B_20_bdr_0_700000.png
+INPUT ../results/bsize/out_rice_girl_B_20_bdr_0_700000.png
+INPUT ../results/bsize/out_rice_girl_B_20_bdr_0_700000.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/inp_text_girl.png
+INPUT ../results/bsize/inp_text_girl.png
+INPUT ../results/bsize/inp_text_girl.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/out_text_girl_B_10_bdr_0_700000.png
+INPUT ../results/bsize/out_text_girl_B_10_bdr_0_700000.png
+INPUT ../results/bsize/out_text_girl_B_10_bdr_0_700000.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/inp_fabric_girl.png
+INPUT ../results/bsize/inp_fabric_girl.png
+INPUT ../results/bsize/inp_fabric_girl.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/out_fabric_girl_B_10_bdr_0_800000.png
+INPUT ../results/bsize/out_fabric_girl_B_10_bdr_0_800000.png
+INPUT ../results/bsize/out_fabric_girl_B_10_bdr_0_800000.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/inp_orange_pear.png
+INPUT ../results/bsize/inp_orange_pear.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/out_orange_pear_B_20_bdr_0_800000.png
+INPUT ../results/bsize/out_orange_pear_B_20_bdr_0_800000.png
+INPUT ../results/bsize/out_orange_pear_B_20_bdr_0_800000.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/inp_orange_potato.png
+INPUT ../results/bsize/inp_orange_potato.png
+INPUT ../results/bsize/inp_orange_potato.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/out_orange_potato_B_10_bdr_0_700000.png
+INPUT ../results/bsize/out_orange_potato_B_10_bdr_0_700000.png
+INPUT ../results/bsize/out_orange_potato_B_10_bdr_0_700000.png
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/egpaper_final.aux
