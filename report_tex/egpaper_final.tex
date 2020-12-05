@@ -135,52 +135,134 @@ Deep Q-Learning is an extension of function approximation for Q-Learning. Deep Q
 %------------------------------------------------------------------------
 \section{Experiments}
 % Add parameters chosen and values of different things learning rate
-\subsection{Synthesis}
-Using a python2 based game environment, we implement agents that learn by interacting with the environment. The parameters for the game are shown in Table 1. The average scores obtained by different agents, across different game sizes have been shown in Table \ref{tab:qlres}.
+\subsection{Synthesis - Effect of block size}
+
+\begin{figure*}[h]
+    \centering
+    \begin{subfigure}[h]{0.2\textwidth}
+        \centering
+        \includegraphics[scale=0.25]{../results/syn/out_apples_B_20.png}
+        \caption{B=20}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.25]{../results/syn/out_apples_B_30.png}
+       \caption{B=30}
+   \end{subfigure}
+   \hfill
+   \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.25]{../results/syn/out_apples_B_40.png}
+       \caption{B=40}
+   \end{subfigure}
+   \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.25]{../results/syn/out_apples_B_50.png}
+       \caption{B=50}
+   \end{subfigure}
+   \caption{Effect of block size on Apples}
+   \label{fig:ap_bs}
+\end{figure*}
+
+\begin{figure*}[h]
+    \centering
+    \begin{subfigure}[h]{0.2\textwidth}
+        \centering
+        \includegraphics[scale=0.15]{../results/syn/out_cans_B_20.png}
+        \caption{B=20}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.15]{../results/syn/out_cans_B_30.png}
+       \caption{B=30}
+   \end{subfigure}
+   \hfill
+   \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.15]{../results/syn/out_cans_B_40.png}
+       \caption{B=40}
+   \end{subfigure}
+   \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.15]{../results/syn/out_cans_B_50.png}
+       \caption{B=50}
+   \end{subfigure}
+   \caption{Effect of block size on Cans}
+   \label{fig:cans_bs}
+\end{figure*}
+
+\begin{figure*}[h]
+    \centering
+    \begin{subfigure}[h]{0.2\textwidth}
+        \centering
+        \includegraphics[scale=0.15]{../results/syn/out_brick_bw_B_20.png}
+        \caption{B=20}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.15]{../results/syn/out_brick_bw_B_30.png}
+       \caption{B=30}
+   \end{subfigure}
+   \hfill
+   \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.15]{../results/syn/out_brick_bw_B_40.png}
+       \caption{B=40}
+   \end{subfigure}
+   \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.15]{../results/syn/out_brick_bw_B_50.png}
+       \caption{B=50}
+   \end{subfigure}
+   \caption{Effect of block size on Bricks}
+   \label{fig:cans_bs}
+\end{figure*}
+
+% \begin{table}[!th]
+% \begin{center}
+% \begin{tabular}{|l|c|}
+% \hline
+% Situation & Reward \\
+% \hline\hline
+% Win (finish food) & +500 \\
+% Lose (eaten by ghost) & -500 \\
+% Eat food & +10\\
+% Consume ghost & +200\\
+% Idle/no food & -1\\
+% \hline
+% \end{tabular}
+% \end{center}
+% \caption{Game parameters for Q-Learning}
+% \end{table}
+% The features chosen for training the Approximate Q-Learning Network are: bias, number\_of\_ghosts\_1\_step\_away, distance\_to\_closest\_food
+% \begin{table}[!th]
+% \begin{center}
+% \begin{tabular}{|l|c|c|c|c|}
+% \hline
+% Approach & Grid size & Avg Score & \#Epochs & Time (train)\\
+% \hline\hline
+% AQL & mediumClassic & 1202.7 & 50 & 5m 45s\\
+% AQL & mediumGrid & 526.4 & 50 & 32s \\
+% QL & smallGrid & 499.5 & 2000 & 1m 24s\\
+% \hline
+% \end{tabular}
+% \end{center}
+% \caption{Some simulations}
+% \label{tab:qlres}
+% \end{table}
 
 
-\begin{table}[!th]
-\begin{center}
-\begin{tabular}{|l|c|}
-\hline
-Situation & Reward \\
-\hline\hline
-Win (finish food) & +500 \\
-Lose (eaten by ghost) & -500 \\
-Eat food & +10\\
-Consume ghost & +200\\
-Idle/no food & -1\\
-\hline
-\end{tabular}
-\end{center}
-\caption{Game parameters for Q-Learning}
-\end{table}
-The features chosen for training the Approximate Q-Learning Network are: bias, number\_of\_ghosts\_1\_step\_away, distance\_to\_closest\_food
-\begin{table}[!th]
-\begin{center}
-\begin{tabular}{|l|c|c|c|c|}
-\hline
-Approach & Grid size & Avg Score & \#Epochs & Time (train)\\
-\hline\hline
-AQL & mediumClassic & 1202.7 & 50 & 5m 45s\\
-AQL & mediumGrid & 526.4 & 50 & 32s \\
-QL & smallGrid & 499.5 & 2000 & 1m 24s\\
-\hline
-\end{tabular}
-\end{center}
-\caption{Some simulations}
-\label{tab:qlres}
-\end{table}
-
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.25]{resources/game_preview.png}
-\end{center}
-\vspace{-0.2em}
-\caption{Pac-Man during Training}
-\label{fig:basic}
-\end{figure}
+% \begin{figure}[h]
+% \begin{center}
+% \includegraphics[scale=0.25]{resources/game_preview.png}
+% \end{center}
+% \vspace{-0.2em}
+% \caption{Pac-Man during Training}
+% \label{fig:basic}
+% \end{figure}
 
 \subsection{Transfer}
 We use OpenAI's MsPacman-v0 environment to train a DQN based agent. Here, we use a neural network to approximately calculate the Q values corresponding to a given state which will be given as an input image.\\
@@ -296,7 +378,7 @@ In this project, we tested a wide range of common reinforcement learning techniq
    \label{fig:apple_res}
 \end{subfigure}   
        \caption{Quilting Results}
-        \label{fig:three graphs}
+        \label{fig:quil_final}
 \end{figure*}
 
 

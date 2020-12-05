@@ -145,6 +145,43 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5
 INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/resources/generalQnetwork.png
 INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/resources/generalQnetwork.png
 INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/resources/generalQnetwork.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/syn/out_apples_B_20.png
+INPUT ../results/syn/out_apples_B_20.png
+INPUT ../results/syn/out_apples_B_20.png
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/syn/out_apples_B_30.png
+INPUT ../results/syn/out_apples_B_30.png
+INPUT ../results/syn/out_apples_B_30.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/syn/out_apples_B_40.png
+INPUT ../results/syn/out_apples_B_40.png
+INPUT ../results/syn/out_apples_B_40.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/syn/out_apples_B_50.png
+INPUT ../results/syn/out_apples_B_50.png
+INPUT ../results/syn/out_apples_B_50.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/syn/out_cans_B_20.png
+INPUT ../results/syn/out_cans_B_20.png
+INPUT ../results/syn/out_cans_B_20.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/syn/out_cans_B_30.png
+INPUT ../results/syn/out_cans_B_30.png
+INPUT ../results/syn/out_cans_B_30.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/syn/out_cans_B_40.png
+INPUT ../results/syn/out_cans_B_40.png
+INPUT ../results/syn/out_cans_B_40.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/syn/out_cans_B_50.png
+INPUT ../results/syn/out_cans_B_50.png
+INPUT ../results/syn/out_cans_B_50.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/syn/out_brick_bw_B_20.png
+INPUT ../results/syn/out_brick_bw_B_20.png
+INPUT ../results/syn/out_brick_bw_B_20.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/syn/out_brick_bw_B_30.png
+INPUT ../results/syn/out_brick_bw_B_30.png
+INPUT ../results/syn/out_brick_bw_B_30.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/syn/out_brick_bw_B_40.png
+INPUT ../results/syn/out_brick_bw_B_40.png
+INPUT ../results/syn/out_brick_bw_B_40.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/syn/out_brick_bw_B_50.png
+INPUT ../results/syn/out_brick_bw_B_50.png
+INPUT ../results/syn/out_brick_bw_B_50.png
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -156,13 +193,9 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/times/ptmb.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
-INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/resources/game_preview.png
-INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/resources/game_preview.png
-INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/resources/game_preview.png
 INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/syn_final/result_apples_c_B_40.png
 INPUT ../results/syn_final/result_apples_c_B_40.png
 INPUT ../results/syn_final/result_apples_c_B_40.png
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/syn_final/result_jute_c_B_40.png
 INPUT ../results/syn_final/result_jute_c_B_40.png
 INPUT ../results/syn_final/result_jute_c_B_40.png
