@@ -103,40 +103,10 @@ Deep Q-Learning is an extension of function approximation for Q-Learning. Deep Q
 \end{figure}
 %-------------------------------------------------------------------------
 
-
-% \begin{table}
-% \begin{center}
-% \begin{tabular}{|l|c|}
-% \hline
-% Method & Frobnability \\
-% \hline\hline
-% Theirs & Frumpy \\
-% Yours & Frobbly \\
-% Ours & Makes one's heart Frob\\
-% \hline
-% \end{tabular}
-% \end{center}
-% \caption{Results.   Ours is better.}
-% \end{table}
-
-%-------------------------------------------------------------------------
-% \section{Experiments}
-% \subsection{Synthesis - Effect of increasing block size}
-
-% An MDP is defined by set of {S, A, T, R} where\\
-% S: State Space i.e. set of all possible states ‘s’\\
-% A: Action Space i.e. set of all possible states ‘a’\\
-% R: Reward for being in a state\\
-% T: Transition dynamics/ Probability transition Matrix\\
-% In our current formulation of MDP a state is a function of Pac-Man position, ghost position and dots position. Each state is assigned a number between 0 to NumStates-1 so that it uniquely determines the value of all three functions. Action Space ‘A’ is {East, West, North, South}. Reward values are defined such that the maximum positive reward is obtained on eating the dots and negative reward on getting eaten by ghost and idle movements. The only valid transitions end up in a non-blocking grid location with probability with due to only one final state possible for each action.
-
-% \subsection{Joint Training}
-% According to the concept of joint training for Pac-Man and ghost we increase the level of Pac-Man by training it on the most intelligent ghost. Similarly, we train the next level using previously trained Pac-Man. So level n+1 of Pac-Man is obtained by training on MDP obtained using ghost policy of level n. Similarly level n of ghost is obtained by training on MDP obtained using Pac-Man policy of level n. We apply value iteration algorithm to obtain Pac-Man policy for MdpPac-Man until it convergers.
-%------------------------------------------------------------------------
 \section{Experiments}
 % Add parameters chosen and values of different things learning rate
-\subsection{Synthesis - Effect of block size}
-
+\subsection{Quilting}
+The effect of block size can be seen in figures x, y and z. These are our observations and here is why.
 \begin{figure*}[h]
     \centering
     \begin{subfigure}[h]{0.2\textwidth}
@@ -265,15 +235,96 @@ Deep Q-Learning is an extension of function approximation for Q-Learning. Deep Q
 % \end{figure}
 
 \subsection{Transfer}
-We use OpenAI's MsPacman-v0 environment to train a DQN based agent. Here, we use a neural network to approximately calculate the Q values corresponding to a given state which will be given as an input image.\\
-The first three layers of the architecture are convolutional layers. The first layer has 32 filters of size 8*8 with stride 4. The second layer has 64 filters of size 4*4 with stride 2. The third layer has 64 filters of size 3*3 with stride 1. The fourth layer is fully connected 512 hidden nodes. The last layer is fully connected too with 9 output nodes corresponding to each of the actions possible.\\
-We have used concepts like Replay memory and Epsilon greedy to help our model train better.
+Here are the observed effects of increasing block size. Trade-off between content preservation and similarity of texture.
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 4cm 2cm 2cm}, clip, scale=0.5]{../results/bsize/inp_rice_bill.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Rice-Bill}
+    \label{fig:rice_bill}
+\end{figure*}
 
+% Block Size
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/bsize/res_rice_bill_bdr_0_800000_iter_5.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Rice-Bill, Block Size, B decay rate = 0.8}
+    \label{fig:rice_bill_bs}
+\end{figure*}
+
+% Changes with iteration
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/iters/res_rice_bill_b_20_bdr_0_800000.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Rice-Bill, iterations, Block size=20, B decay rate = 0.8}
+    \label{fig:rice_bill_iter}
+\end{figure*}
+
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 4cm 2cm 2cm}, clip, scale=0.5]{../results/bsize/inp_rice_girl.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Rice-Girl}
+    \label{fig:rice_girl}
+\end{figure*}
+
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/bsize/res_rice_girl_bdr_0_700000_iter_5.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Rice-Bill, B decay rate = 0.7}
+    \label{fig:rice_girl_bs}
+\end{figure*}
+
+% Changes with iteration
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/iters/res_rice_girl_b_20_bdr_0_800000.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Rice-Girl, iterations, Block size=20, B decay rate = 0.8}
+    \label{fig:rice_girl_iter}
+\end{figure*}
+
+
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 4cm 2cm 2cm}, clip, scale=0.5]{../results/bsize/inp_orange_pear.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Orange-Pear}
+    \label{fig:or_pear}
+\end{figure*}
+
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/bsize/res_orange_pear_bdr_0_900000_iter_5.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Orange-Pear, B decay rate = 0.9}
+    \label{fig:orange_pear_bs}
+\end{figure*}
+
+% Changes with iteration
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/iters/res_orange_pear_b_20_bdr_0_800000.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Orange-Pear, iterations, Block size=20, B decay rate = 0.8}
+    \label{fig:or_pear_iter}
+\end{figure*}
 
 
 \section{Results \& Conclusion}
-In this project, we tested a wide range of common reinforcement learning techniques. The Deep Q-Learning based model, the network learns important features from game-state images and thus, approximates Q values by experience. Given enough training time and model complexity, the network can learn and improve upon the game. However, computational cost for the Deep Neural Network is a major concern. As compared to Approximate Q-Learning, Q-Learning takes a much larger number of epochs to gain similar performance. Thus, Q-Learning is not scale-able for large grids.  We find that approximate Q-Learning outperforms the Q-Learning based agent and also trains faster than both the above approaches. Thus, it may be the ideal approach for medium load reinforcement learning tasks like learning how to play Pac-Man on a medium sized grid.\\
-
+We have some amazing synthesis results below followed by transfer results.
 
 \begin{figure*}
      \centering

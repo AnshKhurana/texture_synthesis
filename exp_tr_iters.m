@@ -6,13 +6,13 @@ warning('off', 'all');
 
 data_path = 'data/';
 results_dir = 'results/iters/';
-texture_images = {'rice', 'fabric'};
-content_images =  {'bill', 'girl'};
+texture_images = {'rice', 'fabric', 'orange'};
+content_images =  {'bill', 'girl', 'pear'};
 
 
 % show optimal results over iterations
 B=20;
-B_decay_rate = 0.75;
+B_decay_rate = 0.8;
 num_passes=5;
 for ti = texture_images
     for ci = content_images

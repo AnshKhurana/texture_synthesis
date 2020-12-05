@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.5)  5 DEC 2020 20:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.5)  5 DEC 2020 21:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -412,22 +412,22 @@ Package pdftex.def Info: resources/generalQnetwork.png  used on input line 98.
 <../results/syn/out_apples_B_20.png, id=9, 367.3725pt x 246.9225pt>
 File: ../results/syn/out_apples_B_20.png Graphic file (type png)
 <use ../results/syn/out_apples_B_20.png>
-Package pdftex.def Info: ../results/syn/out_apples_B_20.png  used on input line 144.
+Package pdftex.def Info: ../results/syn/out_apples_B_20.png  used on input line 114.
 (pdftex.def)             Requested size: 91.8429pt x 61.73047pt.
 <../results/syn/out_apples_B_30.png, id=10, 371.3875pt x 250.9375pt>
 File: ../results/syn/out_apples_B_30.png Graphic file (type png)
 <use ../results/syn/out_apples_B_30.png>
-Package pdftex.def Info: ../results/syn/out_apples_B_30.png  used on input line 150.
+Package pdftex.def Info: ../results/syn/out_apples_B_30.png  used on input line 120.
 (pdftex.def)             Requested size: 92.84663pt x 62.7342pt.
 <../results/syn/out_apples_B_40.png, id=11, 334.24875pt x 253.94875pt>
 File: ../results/syn/out_apples_B_40.png Graphic file (type png)
 <use ../results/syn/out_apples_B_40.png>
-Package pdftex.def Info: ../results/syn/out_apples_B_40.png  used on input line 156.
+Package pdftex.def Info: ../results/syn/out_apples_B_40.png  used on input line 126.
 (pdftex.def)             Requested size: 83.56198pt x 63.48703pt.
 <../results/syn/out_apples_B_50.png, id=12, 317.185pt x 216.81pt>
 File: ../results/syn/out_apples_B_50.png Graphic file (type png)
 <use ../results/syn/out_apples_B_50.png>
-Package pdftex.def Info: ../results/syn/out_apples_B_50.png  used on input line 161.
+Package pdftex.def Info: ../results/syn/out_apples_B_50.png  used on input line 131.
 (pdftex.def)             Requested size: 79.29605pt x 54.20236pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -435,22 +435,22 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <../results/syn/out_cans_B_20.png, id=13, 487.8225pt x 487.8225pt>
 File: ../results/syn/out_cans_B_20.png Graphic file (type png)
 <use ../results/syn/out_cans_B_20.png>
-Package pdftex.def Info: ../results/syn/out_cans_B_20.png  used on input line 172.
+Package pdftex.def Info: ../results/syn/out_cans_B_20.png  used on input line 142.
 (pdftex.def)             Requested size: 73.17021pt x 73.17021pt.
 <../results/syn/out_cans_B_30.png, id=14, 491.8375pt x 491.8375pt>
 File: ../results/syn/out_cans_B_30.png Graphic file (type png)
 <use ../results/syn/out_cans_B_30.png>
-Package pdftex.def Info: ../results/syn/out_cans_B_30.png  used on input line 178.
+Package pdftex.def Info: ../results/syn/out_cans_B_30.png  used on input line 148.
 (pdftex.def)             Requested size: 73.77243pt x 73.77243pt.
 <../results/syn/out_cans_B_40.png, id=15, 494.84875pt x 494.84875pt>
 File: ../results/syn/out_cans_B_40.png Graphic file (type png)
 <use ../results/syn/out_cans_B_40.png>
-Package pdftex.def Info: ../results/syn/out_cans_B_40.png  used on input line 184.
+Package pdftex.def Info: ../results/syn/out_cans_B_40.png  used on input line 154.
 (pdftex.def)             Requested size: 74.2241pt x 74.2241pt.
 <../results/syn/out_cans_B_50.png, id=16, 517.935pt x 517.935pt>
 File: ../results/syn/out_cans_B_50.png Graphic file (type png)
 <use ../results/syn/out_cans_B_50.png>
-Package pdftex.def Info: ../results/syn/out_cans_B_50.png  used on input line 189.
+Package pdftex.def Info: ../results/syn/out_cans_B_50.png  used on input line 159.
 (pdftex.def)             Requested size: 77.68689pt x 77.68689pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -458,156 +458,227 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <../results/syn/out_brick_bw_B_20.png, id=17, 487.8225pt x 487.8225pt>
 File: ../results/syn/out_brick_bw_B_20.png Graphic file (type png)
 <use ../results/syn/out_brick_bw_B_20.png>
-Package pdftex.def Info: ../results/syn/out_brick_bw_B_20.png  used on input line 200.
+Package pdftex.def Info: ../results/syn/out_brick_bw_B_20.png  used on input line 170.
 (pdftex.def)             Requested size: 73.17021pt x 73.17021pt.
 <../results/syn/out_brick_bw_B_30.png, id=18, 491.8375pt x 491.8375pt>
 File: ../results/syn/out_brick_bw_B_30.png Graphic file (type png)
 <use ../results/syn/out_brick_bw_B_30.png>
-Package pdftex.def Info: ../results/syn/out_brick_bw_B_30.png  used on input line 206.
+Package pdftex.def Info: ../results/syn/out_brick_bw_B_30.png  used on input line 176.
 (pdftex.def)             Requested size: 73.77243pt x 73.77243pt.
 <../results/syn/out_brick_bw_B_40.png, id=19, 494.84875pt x 494.84875pt>
 File: ../results/syn/out_brick_bw_B_40.png Graphic file (type png)
 <use ../results/syn/out_brick_bw_B_40.png>
-Package pdftex.def Info: ../results/syn/out_brick_bw_B_40.png  used on input line 212.
+Package pdftex.def Info: ../results/syn/out_brick_bw_B_40.png  used on input line 182.
 (pdftex.def)             Requested size: 74.2241pt x 74.2241pt.
 <../results/syn/out_brick_bw_B_50.png, id=20, 517.935pt x 517.935pt>
 File: ../results/syn/out_brick_bw_B_50.png Graphic file (type png)
 <use ../results/syn/out_brick_bw_B_50.png>
-Package pdftex.def Info: ../results/syn/out_brick_bw_B_50.png  used on input line 217.
+Package pdftex.def Info: ../results/syn/out_brick_bw_B_50.png  used on input line 187.
 (pdftex.def)             Requested size: 77.68689pt x 77.68689pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<../results/bsize/inp_rice_bill.png, id=21, 562.2606pt x 421.575pt>
+File: ../results/bsize/inp_rice_bill.png Graphic file (type png)
+<use ../results/bsize/inp_rice_bill.png>
+Package pdftex.def Info: ../results/bsize/inp_rice_bill.png  used on input line 241.
+(pdftex.def)             Requested size: 224.22426pt x 125.42894pt.
 [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
  </Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/resources/apple_boundary_example.png (PNG copy)> </Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/resources/rl_general.png> </Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/resources/generalQnetwork.png>]
-Underfull \hbox (badness 3449) in paragraph at lines 275--276
-\OT1/ptm/m/n/10 game-state im-ages and thus, ap-prox-i-mates Q val-ues
- []
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
+<../results/bsize/res_rice_bill_bdr_0_800000_iter_5.png, id=46, 562.2606pt x 421.575pt>
+File: ../results/bsize/res_rice_bill_bdr_0_800000_iter_5.png Graphic file (type png)
+<use ../results/bsize/res_rice_bill_bdr_0_800000_iter_5.png>
+Package pdftex.def Info: ../results/bsize/res_rice_bill_bdr_0_800000_iter_5.png  used on input line 251.
+(pdftex.def)             Requested size: 403.60092pt x 123.34158pt.
 
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../results/syn_final/result_apples_c_B_40.png, id=44, 562.2606pt x 421.575pt>
+<../results/iters/res_rice_bill_b_20_bdr_0_800000.png, id=48, 562.2606pt x 421.575pt>
+File: ../results/iters/res_rice_bill_b_20_bdr_0_800000.png Graphic file (type png)
+<use ../results/iters/res_rice_bill_b_20_bdr_0_800000.png>
+Package pdftex.def Info: ../results/iters/res_rice_bill_b_20_bdr_0_800000.png  used on input line 261.
+(pdftex.def)             Requested size: 403.60092pt x 123.34158pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../results/bsize/inp_rice_girl.png, id=50, 562.2606pt x 421.575pt>
+File: ../results/bsize/inp_rice_girl.png Graphic file (type png)
+<use ../results/bsize/inp_rice_girl.png>
+Package pdftex.def Info: ../results/bsize/inp_rice_girl.png  used on input line 270.
+(pdftex.def)             Requested size: 224.22426pt x 125.42894pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../results/bsize/res_rice_girl_bdr_0_700000_iter_5.png, id=52, 562.2606pt x 421.575pt>
+File: ../results/bsize/res_rice_girl_bdr_0_700000_iter_5.png Graphic file (type png)
+<use ../results/bsize/res_rice_girl_bdr_0_700000_iter_5.png>
+Package pdftex.def Info: ../results/bsize/res_rice_girl_bdr_0_700000_iter_5.png  used on input line 279.
+(pdftex.def)             Requested size: 403.60092pt x 123.34158pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../results/iters/res_rice_girl_b_20_bdr_0_800000.png, id=54, 562.2606pt x 421.575pt>
+File: ../results/iters/res_rice_girl_b_20_bdr_0_800000.png Graphic file (type png)
+<use ../results/iters/res_rice_girl_b_20_bdr_0_800000.png>
+Package pdftex.def Info: ../results/iters/res_rice_girl_b_20_bdr_0_800000.png  used on input line 289.
+(pdftex.def)             Requested size: 403.60092pt x 123.34158pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../results/bsize/inp_orange_pear.png, id=56, 562.2606pt x 421.575pt>
+File: ../results/bsize/inp_orange_pear.png Graphic file (type png)
+<use ../results/bsize/inp_orange_pear.png>
+Package pdftex.def Info: ../results/bsize/inp_orange_pear.png  used on input line 299.
+(pdftex.def)             Requested size: 224.22426pt x 125.42894pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../results/bsize/res_orange_pear_bdr_0_900000_iter_5.png, id=58, 562.2606pt x 421.575pt>
+File: ../results/bsize/res_orange_pear_bdr_0_900000_iter_5.png Graphic file (type png)
+<use ../results/bsize/res_orange_pear_bdr_0_900000_iter_5.png>
+Package pdftex.def Info: ../results/bsize/res_orange_pear_bdr_0_900000_iter_5.png  used on input line 308.
+(pdftex.def)             Requested size: 403.60092pt x 123.34158pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../results/iters/res_orange_pear_b_20_bdr_0_800000.png, id=60, 562.2606pt x 421.575pt>
+File: ../results/iters/res_orange_pear_b_20_bdr_0_800000.png Graphic file (type png)
+<use ../results/iters/res_orange_pear_b_20_bdr_0_800000.png>
+Package pdftex.def Info: ../results/iters/res_orange_pear_b_20_bdr_0_800000.png  used on input line 318.
+(pdftex.def)             Requested size: 403.60092pt x 123.34158pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../results/syn_final/result_apples_c_B_40.png, id=62, 562.2606pt x 421.575pt>
 File: ../results/syn_final/result_apples_c_B_40.png Graphic file (type png)
 <use ../results/syn_final/result_apples_c_B_40.png>
-Package pdftex.def Info: ../results/syn_final/result_apples_c_B_40.png  used on input line 282.
+Package pdftex.def Info: ../results/syn_final/result_apples_c_B_40.png  used on input line 333.
 (pdftex.def)             Requested size: 309.90103pt x 205.5707pt.
-<../results/syn_final/result_jute_c_B_40.png, id=46, 562.2606pt x 421.575pt>
+<../results/syn_final/result_jute_c_B_40.png, id=64, 562.2606pt x 421.575pt>
 File: ../results/syn_final/result_jute_c_B_40.png Graphic file (type png)
 <use ../results/syn_final/result_jute_c_B_40.png>
-Package pdftex.def Info: ../results/syn_final/result_jute_c_B_40.png  used on input line 289.
+Package pdftex.def Info: ../results/syn_final/result_jute_c_B_40.png  used on input line 340.
 (pdftex.def)             Requested size: 309.90103pt x 205.5707pt.
-<../results/syn_final/result_cans_B_40.png, id=48, 562.2606pt x 421.575pt>
+<../results/syn_final/result_cans_B_40.png, id=66, 562.2606pt x 421.575pt>
 File: ../results/syn_final/result_cans_B_40.png Graphic file (type png)
 <use ../results/syn_final/result_cans_B_40.png>
-Package pdftex.def Info: ../results/syn_final/result_cans_B_40.png  used on input line 296.
+Package pdftex.def Info: ../results/syn_final/result_cans_B_40.png  used on input line 347.
 (pdftex.def)             Requested size: 309.90103pt x 205.5707pt.
-<../results/syn_final/result_brick_bw_B_40.png, id=50, 562.2606pt x 421.575pt>
+<../results/syn_final/result_brick_bw_B_40.png, id=68, 562.2606pt x 421.575pt>
 File: ../results/syn_final/result_brick_bw_B_40.png Graphic file (type png)
 <use ../results/syn_final/result_brick_bw_B_40.png>
-Package pdftex.def Info: ../results/syn_final/result_brick_bw_B_40.png  used on input line 302.
+Package pdftex.def Info: ../results/syn_final/result_brick_bw_B_40.png  used on input line 353.
 (pdftex.def)             Requested size: 309.90103pt x 205.5707pt.
-<../results/syn_final/result_text_B_40.png, id=52, 562.2606pt x 421.575pt>
+<../results/syn_final/result_text_B_40.png, id=70, 562.2606pt x 421.575pt>
 File: ../results/syn_final/result_text_B_40.png Graphic file (type png)
 <use ../results/syn_final/result_text_B_40.png>
-Package pdftex.def Info: ../results/syn_final/result_text_B_40.png  used on input line 309.
+Package pdftex.def Info: ../results/syn_final/result_text_B_40.png  used on input line 360.
 (pdftex.def)             Requested size: 309.90103pt x 205.5707pt.
-<../results/syn_final/result_D1_B_40.png, id=54, 562.2606pt x 421.575pt>
+<../results/syn_final/result_D1_B_40.png, id=72, 562.2606pt x 421.575pt>
 File: ../results/syn_final/result_D1_B_40.png Graphic file (type png)
 <use ../results/syn_final/result_D1_B_40.png>
-Package pdftex.def Info: ../results/syn_final/result_D1_B_40.png  used on input line 316.
+Package pdftex.def Info: ../results/syn_final/result_D1_B_40.png  used on input line 367.
 (pdftex.def)             Requested size: 309.90103pt x 205.5707pt.
-<../results/syn_final/result_fabric_B_40.png, id=56, 562.2606pt x 421.575pt>
+<../results/syn_final/result_fabric_B_40.png, id=74, 562.2606pt x 421.575pt>
 File: ../results/syn_final/result_fabric_B_40.png Graphic file (type png)
 <use ../results/syn_final/result_fabric_B_40.png>
-Package pdftex.def Info: ../results/syn_final/result_fabric_B_40.png  used on input line 322.
+Package pdftex.def Info: ../results/syn_final/result_fabric_B_40.png  used on input line 373.
 (pdftex.def)             Requested size: 309.90103pt x 205.5707pt.
-<../results/syn_final/result_radishes_B_40.png, id=58, 562.2606pt x 421.575pt>
+<../results/syn_final/result_radishes_B_40.png, id=76, 562.2606pt x 421.575pt>
 File: ../results/syn_final/result_radishes_B_40.png Graphic file (type png)
 <use ../results/syn_final/result_radishes_B_40.png>
-Package pdftex.def Info: ../results/syn_final/result_radishes_B_40.png  used on input line 329.
+Package pdftex.def Info: ../results/syn_final/result_radishes_B_40.png  used on input line 380.
 (pdftex.def)             Requested size: 309.90103pt x 205.5707pt.
-<../results/syn_final/result_rice_B_40.png, id=60, 562.2606pt x 421.575pt>
+<../results/syn_final/result_rice_B_40.png, id=78, 562.2606pt x 421.575pt>
 File: ../results/syn_final/result_rice_B_40.png Graphic file (type png)
 <use ../results/syn_final/result_rice_B_40.png>
-Package pdftex.def Info: ../results/syn_final/result_rice_B_40.png  used on input line 336.
+Package pdftex.def Info: ../results/syn_final/result_rice_B_40.png  used on input line 387.
 (pdftex.def)             Requested size: 309.90103pt x 205.5707pt.
-<../results/syn_final/result_wood_c_B_40.png, id=62, 562.2606pt x 421.575pt>
+<../results/syn_final/result_wood_c_B_40.png, id=80, 562.2606pt x 421.575pt>
 File: ../results/syn_final/result_wood_c_B_40.png Graphic file (type png)
 <use ../results/syn_final/result_wood_c_B_40.png>
-Package pdftex.def Info: ../results/syn_final/result_wood_c_B_40.png  used on input line 342.
+Package pdftex.def Info: ../results/syn_final/result_wood_c_B_40.png  used on input line 393.
 (pdftex.def)             Requested size: 309.90103pt x 205.5707pt.
-<../results/syn_final/result_tile_B_60.png, id=64, 562.2606pt x 421.575pt>
+<../results/syn_final/result_tile_B_60.png, id=82, 562.2606pt x 421.575pt>
 File: ../results/syn_final/result_tile_B_60.png Graphic file (type png)
 <use ../results/syn_final/result_tile_B_60.png>
-Package pdftex.def Info: ../results/syn_final/result_tile_B_60.png  used on input line 349.
+Package pdftex.def Info: ../results/syn_final/result_tile_B_60.png  used on input line 400.
 (pdftex.def)             Requested size: 309.90103pt x 205.5707pt.
-<../results/syn_final/result_brick_B_60.png, id=66, 562.2606pt x 421.575pt>
+<../results/syn_final/result_brick_B_60.png, id=84, 562.2606pt x 421.575pt>
 File: ../results/syn_final/result_brick_B_60.png Graphic file (type png)
 <use ../results/syn_final/result_brick_B_60.png>
-Package pdftex.def Info: ../results/syn_final/result_brick_B_60.png  used on input line 356.
+Package pdftex.def Info: ../results/syn_final/result_brick_B_60.png  used on input line 407.
 (pdftex.def)             Requested size: 309.90103pt x 205.5707pt.
-<../results/syn_final/result_rope_B_60.png, id=68, 562.2606pt x 421.575pt>
+<../results/syn_final/result_rope_B_60.png, id=86, 562.2606pt x 421.575pt>
 File: ../results/syn_final/result_rope_B_60.png Graphic file (type png)
 <use ../results/syn_final/result_rope_B_60.png>
-Package pdftex.def Info: ../results/syn_final/result_rope_B_60.png  used on input line 362.
+Package pdftex.def Info: ../results/syn_final/result_rope_B_60.png  used on input line 413.
 (pdftex.def)             Requested size: 309.90103pt x 205.5707pt.
-<../results/syn_final/result_br_pattern_B_60.png, id=70, 562.2606pt x 421.575pt>
+<../results/syn_final/result_br_pattern_B_60.png, id=88, 562.2606pt x 421.575pt>
 File: ../results/syn_final/result_br_pattern_B_60.png Graphic file (type png)
 <use ../results/syn_final/result_br_pattern_B_60.png>
-Package pdftex.def Info: ../results/syn_final/result_br_pattern_B_60.png  used on input line 369.
+Package pdftex.def Info: ../results/syn_final/result_br_pattern_B_60.png  used on input line 420.
 (pdftex.def)             Requested size: 309.90103pt x 205.5707pt.
-<../results/syn_final/result_stone_B_60.png, id=72, 562.2606pt x 421.575pt>
+<../results/syn_final/result_stone_B_60.png, id=90, 562.2606pt x 421.575pt>
 File: ../results/syn_final/result_stone_B_60.png Graphic file (type png)
 <use ../results/syn_final/result_stone_B_60.png>
-Package pdftex.def Info: ../results/syn_final/result_stone_B_60.png  used on input line 376.
+Package pdftex.def Info: ../results/syn_final/result_stone_B_60.png  used on input line 427.
 (pdftex.def)             Requested size: 309.90103pt x 205.5707pt.
 
-LaTeX Warning: Float too large for page by 13.43944pt on input line 382.
+LaTeX Warning: Float too large for page by 13.43944pt on input line 433.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 412.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 463.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.412 \end{document}
+l.463 \end{document}
                      [2
 
  <../results/syn/out_apples_B_20.png (PNG copy)> <../results/syn/out_apples_B_30.png (PNG copy)> <../results/syn/out_apples_B_40.png (PNG copy)> <../results/syn/out_apples_B_50.png (PNG copy)> <../results/syn/out_cans_B_20.png (PNG copy)> <../results/syn/out_cans_B_30.png (PNG copy)> <../results/syn/out_cans_B_40.png (PNG copy)> <../results/syn/out_cans_B_50.png (PNG copy)>]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.412 \end{document}
-                     [3 <../results/syn/out_brick_bw_B_20.png (PNG copy)> <../results/syn/out_brick_bw_B_30.png (PNG copy)> <../results/syn/out_brick_bw_B_40.png (PNG copy)> <../results/syn/out_brick_bw_B_50.png (PNG copy)>]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+l.463 \end{document}
+                     [3 <../results/bsize/inp_rice_bill.png (PNG copy)> <../results/bsize/res_rice_bill_bdr_0_800000_iter_5.png (PNG copy)> <../results/iters/res_rice_bill_b_20_bdr_0_800000.png (PNG copy)> <../results/syn/out_brick_bw_B_20.png (PNG copy)> <../results/syn/out_brick_bw_B_30.png (PNG copy)> <../results/syn/out_brick_bw_B_40.png (PNG copy)> <../results/syn/out_brick_bw_B_50.png (PNG copy)>]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.412 \end{document}
-                     [4 <../results/syn_final/result_apples_c_B_40.png (PNG copy)> <../results/syn_final/result_jute_c_B_40.png (PNG copy)> <../results/syn_final/result_cans_B_40.png (PNG copy)> <../results/syn_final/result_brick_bw_B_40.png (PNG copy)> <../results/syn_final/result_text_B_40.png (PNG copy)> <../results/syn_final/result_D1_B_40.png (PNG copy)> <../results/syn_final/result_fabric_B_40.png (PNG copy)> <../results/syn_final/result_radishes_B_40.png (PNG copy)> <../results/syn_final/result_rice_B_40.png (PNG copy)> <../results/syn_final/result_wood_c_B_40.png (PNG copy)> <../results/syn_final/result_tile_B_60.png (PNG copy)> <../results/syn_final/result_brick_B_60.png (PNG copy)> <../results/syn_final/result_rope_B_60.png (PNG copy)> <../results/syn_final/result_br_pattern_B_60.png (PNG copy)> <../results/syn_final/result_stone_B_60.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 412.
+l.463 \end{document}
+                     [4 <../results/bsize/inp_rice_girl.png (PNG copy)> <../results/bsize/res_rice_girl_bdr_0_700000_iter_5.png (PNG copy)> <../results/iters/res_rice_girl_b_20_bdr_0_800000.png (PNG copy)>]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.463 \end{document}
+                     [5 <../results/bsize/inp_orange_pear.png (PNG copy)> <../results/bsize/res_orange_pear_bdr_0_900000_iter_5.png (PNG copy)> <../results/iters/res_orange_pear_b_20_bdr_0_800000.png (PNG copy)>]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.463 \end{document}
+                     [6 <../results/syn_final/result_apples_c_B_40.png (PNG copy)> <../results/syn_final/result_jute_c_B_40.png (PNG copy)> <../results/syn_final/result_cans_B_40.png (PNG copy)> <../results/syn_final/result_brick_bw_B_40.png (PNG copy)> <../results/syn_final/result_text_B_40.png (PNG copy)> <../results/syn_final/result_D1_B_40.png (PNG copy)> <../results/syn_final/result_fabric_B_40.png (PNG copy)> <../results/syn_final/result_radishes_B_40.png (PNG copy)> <../results/syn_final/result_rice_B_40.png (PNG copy)> <../results/syn_final/result_wood_c_B_40.png (PNG copy)> <../results/syn_final/result_tile_B_60.png (PNG copy)> <../results/syn_final/result_brick_B_60.png (PNG copy)> <../results/syn_final/result_rope_B_60.png (PNG copy)> <../results/syn_final/result_br_pattern_B_60.png (PNG copy)> <../results/syn_final/result_stone_B_60.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 463.
  (/Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/egpaper_final.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 412.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 412.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 463.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 463.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 412.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 463.
  ) 
 Here is how much of TeX's memory you used:
- 7460 strings out of 492616
- 116633 string characters out of 6129482
- 213134 words of memory out of 5000000
- 11247 multiletter control sequences out of 15000+600000
+ 7525 strings out of 492616
+ 119123 string characters out of 6129482
+ 215739 words of memory out of 5000000
+ 11292 multiletter control sequences out of 15000+600000
  20803 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,10n,39p,959b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,10n,39p,841b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on "/Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/egpaper_final.pdf" (4 pages, 4815264 bytes).
+Output written on "/Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/egpaper_final.pdf" (6 pages, 6726760 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
- 247 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 167 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
+ 27 named destinations out of 1000 (max. 500000)
+ 346 words of extra memory for PDF output out of 10000 (max. 10000000)
 

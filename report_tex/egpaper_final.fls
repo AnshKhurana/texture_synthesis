@@ -182,6 +182,9 @@ INPUT ../results/syn/out_brick_bw_B_40.png
 INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/syn/out_brick_bw_B_50.png
 INPUT ../results/syn/out_brick_bw_B_50.png
 INPUT ../results/syn/out_brick_bw_B_50.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/inp_rice_bill.png
+INPUT ../results/bsize/inp_rice_bill.png
+INPUT ../results/bsize/inp_rice_bill.png
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -193,6 +196,30 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/times/ptmb.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/res_rice_bill_bdr_0_800000_iter_5.png
+INPUT ../results/bsize/res_rice_bill_bdr_0_800000_iter_5.png
+INPUT ../results/bsize/res_rice_bill_bdr_0_800000_iter_5.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/iters/res_rice_bill_b_20_bdr_0_800000.png
+INPUT ../results/iters/res_rice_bill_b_20_bdr_0_800000.png
+INPUT ../results/iters/res_rice_bill_b_20_bdr_0_800000.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/inp_rice_girl.png
+INPUT ../results/bsize/inp_rice_girl.png
+INPUT ../results/bsize/inp_rice_girl.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/res_rice_girl_bdr_0_700000_iter_5.png
+INPUT ../results/bsize/res_rice_girl_bdr_0_700000_iter_5.png
+INPUT ../results/bsize/res_rice_girl_bdr_0_700000_iter_5.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/iters/res_rice_girl_b_20_bdr_0_800000.png
+INPUT ../results/iters/res_rice_girl_b_20_bdr_0_800000.png
+INPUT ../results/iters/res_rice_girl_b_20_bdr_0_800000.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/inp_orange_pear.png
+INPUT ../results/bsize/inp_orange_pear.png
+INPUT ../results/bsize/inp_orange_pear.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/bsize/res_orange_pear_bdr_0_900000_iter_5.png
+INPUT ../results/bsize/res_orange_pear_bdr_0_900000_iter_5.png
+INPUT ../results/bsize/res_orange_pear_bdr_0_900000_iter_5.png
+INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/iters/res_orange_pear_b_20_bdr_0_800000.png
+INPUT ../results/iters/res_orange_pear_b_20_bdr_0_800000.png
+INPUT ../results/iters/res_orange_pear_b_20_bdr_0_800000.png
 INPUT /Users/ansh/OneDrive - iitb.ac.in/Academics/Semester 7/CS 663/project/texture_synthesis/report_tex/../results/syn_final/result_apples_c_B_40.png
 INPUT ../results/syn_final/result_apples_c_B_40.png
 INPUT ../results/syn_final/result_apples_c_B_40.png
