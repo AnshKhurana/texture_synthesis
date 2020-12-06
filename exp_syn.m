@@ -4,10 +4,10 @@ warning('off', 'all');
 
 data_path = 'data/';
 results_dir = 'results/syn/';
-texture_images = {'apples_c'};
+texture_images = {'stone'};
 % texture_images = {'jute', 'apples'};
 
-B_choices=[20, 30, 40, 50];
+B_choices=[60, 70, 80, 90, 100];
 for ti = texture_images
     t_path = fullfile(data_path, ti{1});
     for Bi = 1:length(B_choices)
