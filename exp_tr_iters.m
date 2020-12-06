@@ -6,8 +6,8 @@ warning('off', 'all');
 
 data_path = 'data/';
 results_dir = 'results/iters/';
-texture_images = {'rice', 'fabric', 'orange'};
-content_images =  {'bill', 'girl', 'pear'};
+texture_images = {'rice'};
+content_images =  {'girl'};
 
 
 % show optimal results over iterations

@@ -8,6 +8,8 @@
 \usepackage{amssymb}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{float}
+
 % Include other packages here, before hyperref.
 
 % If you comment hyperref and then uncomment it, you should delete
@@ -49,21 +51,23 @@ Kushagra Juneja\\
 %%%%%%%%% BODY TEXT
 \section{Introduction}
 We present a simple method which given a texture image, generates new images having the same texture. We do this by stitching together small patches of the texture image to generate a new image having same texture. We also extend the algorithm to perform texture transfer i.e. rendering an object with the texture taken from a different object. Unlike other methods which use one-pixel-at-a-time synthesis, our method uses patches of the image at a time and hence provides a great computational advantage while not compromising with the results since even in complicated textures as well the degree of freedom is only of a few pixels and hence patches are an intuitive choice. 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.50]{resources/rl_general.png}
-\end{center}
-\vspace{-0.2em}
-\caption{Reinforcement Learning Paradigm}
-\label{fig:basic}
-\end{figure}
+% \begin{figure}[h]
+% \begin{center}
+% \includegraphics[scale=0.50]{resources/rl_general.png}
+% \end{center}
+% \vspace{-0.2em}
+% \caption{Reinforcement Learning Paradigm}
+% \label{fig:basic}
+% \end{figure}
 %-------------------------------------------------------------------------
 \vspace{-6pt}
 \section{Method}
 
 \subsection{Quilting}
+The patch-based synthesis algorithm in this approach picks small blocks from the texture image and stitches them together to form a larger image that follows the same texture. This algorithm is similar to the quilting procedure used in textile where pieces of fabric are stitched together using a needle and thread.
+\subsubsection{Algorithm}
 \begin{itemize}
-\item We go through the image to be synthesized in units of a block. 
+\item We construct the image to be synthesized in units of a block. 
 \item For every location, we search the input texture and find the set of blocks which match the above and the left block in the overlapping region. Precisely, we choose those blocks whose error (using L2 norm) with the already placed blocks in the overlapping region are within some tolerance (set to 0.1) of the minimum error. Among these blocks we choose a block randomly.
 \item Now, we need to stitch this block with the already placed blocks. To do that, we find the optimal boundary path which minimizes the sum of errors along the path. This is done by dynamic programming. This boundary is visualized in figure \ref{fig:bcut_example}. To the right and bottom of this boundary, we choose the pixels of the new block, and in the other region, we choose the pixels of the old blocks.
 \end{itemize}
@@ -107,12 +111,12 @@ minimizing the summation of following two losses -
     in the corresponding patch of the target image. Call it
     SSE2
 \end{itemize}
-\newline
+% \newline
 Mathematically the minimized loss is -
 \begin{align}
 L = \alpha *SSE1 + (1 - \alpha) *SSE2\notag
 \end{align}
-The paramter α, in i th iteration is heuristically kept
+The paramter $\alpha$, in i th iteration is heuristically kept
 as $\alpha_i = 0.8*\frac{i-1}{N-1}+0.1$
 where $N$ is the total number
 of iterations and is ideally kept between 3 to 5. The size
@@ -138,249 +142,14 @@ would tend to remain same (as they match the target imageperfectly and are inher
 the boundary would be chosen so as the remain closer to
 the previously chosen patch, while enhancing continuity
 accross the boundary.
-
-\subsection{Neural Network Style Transfer}
-% Insert picture of the model
-Not doing this anymore.
-Deep Learning does away with the need to handcraft features for the states. In the Deep Q-Learning based approach, the state is captured by an image of the current situation of the game. %We create an image representing the current state of the game every four frames which are blended together and preprocessed.
-Deep Q-Learning is an extension of function approximation for Q-Learning. Deep Q-Learning uses a deep neural network to approximate the Q values for every action, given the current state. Thus, the output layer of the Deep Q-Network has dimensions = $|A|$ (The number of actions). The best action after learning the network can be taken by calculating an argmax over the output layer. 
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.15]{resources/generalQnetwork.png}
-\end{center}
-\vspace{-0.2em}
-\caption{A generic Deep Q-Network}
-\label{fig:genericDQN}
-\end{figure}
 %-------------------------------------------------------------------------
 
-\section{Experiments}
-% Add parameters chosen and values of different things learning rate
-\subsection{Quilting}
-The effect of block size can be seen in figures \ref{fig:ap_bs}, \ref{fig:cans_bs} and \ref{fig:brick_bs}. As we can see, lower block sizes are not enough to capture the complete texture, hence lead to distorted boundaries and merging of the objects. E.g. consider the apples image, here in the case of B=20, the block size is not large enough to capture a complete apple in the overlapping region, hence in the overlapping region, we can see a lot of apples merging with each other. A very large block size is also not preferable since it reduces the number of patches we select from which means that there is less chance of adjacent patches matching with each other, hence at the boundaries of patches we will observe discontinuity.
-\begin{figure*}[h]
-    \centering
-    \begin{subfigure}[h]{0.2\textwidth}
-        \centering
-        \includegraphics[scale=0.25]{../results/syn/out_apples_B_20.png}
-        \caption{B=20}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[h]{0.2\textwidth}
-       \centering
-       \includegraphics[scale=0.25]{../results/syn/out_apples_B_30.png}
-       \caption{B=30}
-   \end{subfigure}
-   \hfill
-   \begin{subfigure}[h]{0.2\textwidth}
-       \centering
-       \includegraphics[scale=0.25]{../results/syn/out_apples_B_40.png}
-       \caption{B=40}
-   \end{subfigure}
-   \begin{subfigure}[h]{0.2\textwidth}
-       \centering
-       \includegraphics[scale=0.25]{../results/syn/out_apples_B_50.png}
-       \caption{B=50}
-   \end{subfigure}
-   \caption{Effect of block size on Apples}
-   \label{fig:ap_bs}
-\end{figure*}
+\section{Results}
+We show some amazing synthesis results below followed by transfer results. 
+The results demonstrate the effectiveness of our implementation. The images produced are high quality and realistic for both synthesis and transfer tasks. 
+We are able to reproduce results similar in quality when compared to the ones presented in the paper.
 
-\begin{figure*}[h]
-    \centering
-    \begin{subfigure}[h]{0.2\textwidth}
-        \centering
-        \includegraphics[scale=0.15]{../results/syn/out_cans_B_20.png}
-        \caption{B=20}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[h]{0.2\textwidth}
-       \centering
-       \includegraphics[scale=0.15]{../results/syn/out_cans_B_30.png}
-       \caption{B=30}
-   \end{subfigure}
-   \hfill
-   \begin{subfigure}[h]{0.2\textwidth}
-       \centering
-       \includegraphics[scale=0.15]{../results/syn/out_cans_B_40.png}
-       \caption{B=40}
-   \end{subfigure}
-   \begin{subfigure}[h]{0.2\textwidth}
-       \centering
-       \includegraphics[scale=0.15]{../results/syn/out_cans_B_50.png}
-       \caption{B=50}
-   \end{subfigure}
-   \caption{Effect of block size on Cans}
-   \label{fig:cans_bs}
-\end{figure*}
-
-\begin{figure*}[h]
-    \centering
-    \begin{subfigure}[h]{0.2\textwidth}
-        \centering
-        \includegraphics[scale=0.15]{../results/syn/out_brick_bw_B_20.png}
-        \caption{B=20}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[h]{0.2\textwidth}
-       \centering
-       \includegraphics[scale=0.15]{../results/syn/out_brick_bw_B_30.png}
-       \caption{B=30}
-   \end{subfigure}
-   \hfill
-   \begin{subfigure}[h]{0.2\textwidth}
-       \centering
-       \includegraphics[scale=0.15]{../results/syn/out_brick_bw_B_40.png}
-       \caption{B=40}
-   \end{subfigure}
-   \begin{subfigure}[h]{0.2\textwidth}
-       \centering
-       \includegraphics[scale=0.15]{../results/syn/out_brick_bw_B_50.png}
-       \caption{B=50}
-   \end{subfigure}
-   \caption{Effect of block size on Bricks}
-   \label{fig:brick_bs}
-\end{figure*}
-
-% \begin{table}[!th]
-% \begin{center}
-% \begin{tabular}{|l|c|}
-% \hline
-% Situation & Reward \\
-% \hline\hline
-% Win (finish food) & +500 \\
-% Lose (eaten by ghost) & -500 \\
-% Eat food & +10\\
-% Consume ghost & +200\\
-% Idle/no food & -1\\
-% \hline
-% \end{tabular}
-% \end{center}
-% \caption{Game parameters for Q-Learning}
-% \end{table}
-% The features chosen for training the Approximate Q-Learning Network are: bias, number\_of\_ghosts\_1\_step\_away, distance\_to\_closest\_food
-% \begin{table}[!th]
-% \begin{center}
-% \begin{tabular}{|l|c|c|c|c|}
-% \hline
-% Approach & Grid size & Avg Score & \#Epochs & Time (train)\\
-% \hline\hline
-% AQL & mediumClassic & 1202.7 & 50 & 5m 45s\\
-% AQL & mediumGrid & 526.4 & 50 & 32s \\
-% QL & smallGrid & 499.5 & 2000 & 1m 24s\\
-% \hline
-% \end{tabular}
-% \end{center}
-% \caption{Some simulations}
-% \label{tab:qlres}
-% \end{table}
-
-
-% \begin{figure}[h]
-% \begin{center}
-% \includegraphics[scale=0.25]{resources/game_preview.png}
-% \end{center}
-% \vspace{-0.2em}
-% \caption{Pac-Man during Training}
-% \label{fig:basic}
-% \end{figure}
-
-\subsection{Transfer}
-Here, we study the effect of changing block size on the texture transfer result. When the block size is small, content preservation is more because the overlapping region more accurately represents the approximate intensity of the complete block hence matching that leads to a result which closely resembles the target image content. However, a small block size is not enough to capture the complete texture of the image as we saw in texture synthesis, hence the texture of the image is better preserved when the block size is larger. Hence, there is a tradeoff between content preservation and texture preservation and hence the block size must be tuned appropriately to get visually pleasing results.
-
-We also study the output images obtained after each iteration of the algorithm. In the earlier iterations, a small value of $\alpha_{i}$ is used which means that the content preservation will be more but there will be some artifacts in the boundary of the patches and the texture will not be very clear. This is because the error weight given to matching the overlapping region with the previously places blocks is low, hence we will observe discontinuity in the edges of the patches. As we reach the later iterations, this quantity $\alpha_{i}$ is gradually increased which removes these boundary artifacts and leads to a better image texture and continuity while sacrificing a bit on the content preservation. Hence, the number of iterations must also be tuned properly for superior results.
-\begin{figure*}[h]
-    \begin{center}
-    \includegraphics[trim={2cm 4cm 2cm 2cm}, clip, scale=0.5]{../results/bsize/inp_rice_bill.png}
-    \end{center}
-    \vspace{-0.2em}
-    \caption{Rice-Bill}
-    \label{fig:rice_bill}
-\end{figure*}
-
-% Block Size
-\begin{figure*}[h]
-    \begin{center}
-    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/bsize/res_rice_bill_bdr_0_800000_iter_5.png}
-    \end{center}
-    \vspace{-0.2em}
-    \caption{Rice-Bill, Block Size, B decay rate = 0.8}
-    \label{fig:rice_bill_bs}
-\end{figure*}
-
-% Changes with iteration
-\begin{figure*}[h]
-    \begin{center}
-    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/iters/res_rice_bill_b_20_bdr_0_800000.png}
-    \end{center}
-    \vspace{-0.2em}
-    \caption{Rice-Bill, iterations, Block size=20, B decay rate = 0.8}
-    \label{fig:rice_bill_iter}
-\end{figure*}
-
-\begin{figure*}[h]
-    \begin{center}
-    \includegraphics[trim={2cm 4cm 2cm 2cm}, clip, scale=0.5]{../results/bsize/inp_rice_girl.png}
-    \end{center}
-    \vspace{-0.2em}
-    \caption{Rice-Girl}
-    \label{fig:rice_girl}
-\end{figure*}
-
-\begin{figure*}[h]
-    \begin{center}
-    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/bsize/res_rice_girl_bdr_0_700000_iter_5.png}
-    \end{center}
-    \vspace{-0.2em}
-    \caption{Rice-Bill, B decay rate = 0.7}
-    \label{fig:rice_girl_bs}
-\end{figure*}
-
-% Changes with iteration
-\begin{figure*}[h]
-    \begin{center}
-    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/iters/res_rice_girl_b_20_bdr_0_800000.png}
-    \end{center}
-    \vspace{-0.2em}
-    \caption{Rice-Girl, iterations, Block size=20, B decay rate = 0.8}
-    \label{fig:rice_girl_iter}
-\end{figure*}
-
-
-\begin{figure*}[h]
-    \begin{center}
-    \includegraphics[trim={2cm 4cm 2cm 2cm}, clip, scale=0.5]{../results/bsize/inp_orange_pear.png}
-    \end{center}
-    \vspace{-0.2em}
-    \caption{Orange-Pear}
-    \label{fig:or_pear}
-\end{figure*}
-
-\begin{figure*}[h]
-    \begin{center}
-    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/bsize/res_orange_pear_bdr_0_900000_iter_5.png}
-    \end{center}
-    \vspace{-0.2em}
-    \caption{Orange-Pear, B decay rate = 0.9}
-    \label{fig:orange_pear_bs}
-\end{figure*}
-
-% Changes with iteration
-\begin{figure*}[h]
-    \begin{center}
-    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/iters/res_orange_pear_b_20_bdr_0_800000.png}
-    \end{center}
-    \vspace{-0.2em}
-    \caption{Orange-Pear, iterations, Block size=20, B decay rate = 0.8}
-    \label{fig:or_pear_iter}
-\end{figure*}
-
-
-\section{Results \& Conclusion}
-We have some amazing synthesis results below followed by transfer results.
-
-\begin{figure*}
+\begin{figure*}[!htb]
      \centering
      \begin{subfigure}[h]{0.33\textwidth}
          \centering
@@ -500,7 +269,7 @@ We have some amazing synthesis results below followed by transfer results.
        \includegraphics[scale=0.6]{../results/bsize/out_rice_bill_B_20_bdr_0_800000.png}
        \caption{Output}
    \end{subfigure}
-   \caption{Result for Rice-Bill}
+   \caption{Result for texture Rice trasferred to Bill image}
    \label{fig:ap_bs}
 \end{figure*}
 
@@ -517,7 +286,7 @@ We have some amazing synthesis results below followed by transfer results.
        \includegraphics[scale=0.4]{../results/bsize/out_rice_girl_B_20_bdr_0_700000.png}
        \caption{Output}
    \end{subfigure}
-   \caption{Result for Rice-Girl}
+   \caption{Result for texture Rice transferred to Girl image}
    \label{fig:ap_bs}
 \end{figure*}
 
@@ -534,7 +303,7 @@ We have some amazing synthesis results below followed by transfer results.
        \includegraphics[scale=0.4]{../results/bsize/out_text_girl_B_10_bdr_0_700000.png}`'
        \caption{Output}
    \end{subfigure}
-   \caption{Result for Text-Girl}
+   \caption{Result for texture Text transferred to Girl image}
    \label{fig:ap_bs}
 \end{figure*}
 
@@ -551,7 +320,7 @@ We have some amazing synthesis results below followed by transfer results.
        \includegraphics[scale=0.4]{../results/bsize/out_fabric_girl_B_10_bdr_0_800000.png}
        \caption{Output}
    \end{subfigure}
-   \caption{Result for Fabric-Girl}
+   \caption{Result for texture Fabric transferred to Girl image}
    \label{fig:ap_bs}
 \end{figure*}
 
@@ -568,7 +337,7 @@ We have some amazing synthesis results below followed by transfer results.
        \includegraphics[scale=0.4]{../results/bsize/out_orange_pear_B_20_bdr_0_800000.png}
        \caption{Output}
    \end{subfigure}
-   \caption{Result for Orange-Pear}
+   \caption{Result for texture Orange transferred to Pear image}
    \label{fig:ap_bs}
 \end{figure*}
 
@@ -585,10 +354,10 @@ We have some amazing synthesis results below followed by transfer results.
        \includegraphics[scale=0.4]{../results/bsize/out_orange_potato_B_10_bdr_0_700000.png}
        \caption{Output}
    \end{subfigure}
-   \caption{Result for Orange-Potato}
+   \caption{Result for texture Orange transferred to Potato image}
    \label{fig:ap_bs}
 \end{figure*}
-
+\vspace{-80pt}
 % \begin{thebibliography}{999}
 
 % \bibitem{one}
@@ -616,4 +385,226 @@ We have some amazing synthesis results below followed by transfer results.
 % \bibitem{twelve}{https://pythonprogramming.net/pygame-python-3-part-1-intro/}
 % \bibitem{thirteen}{https://oregonstate.instructure.com }
 % \end{thebibliography}
+\clearpage
+\section{Ablation Studies}
+% Add parameters chosen and values of different things learning rate
+\subsection{Quilting}
+The effect of block size can be seen in figures \ref{fig:ap_bs}, \ref{fig:cans_bs} and \ref{fig:brick_bs}. As we can see, lower block sizes are not enough to capture the complete texture, hence lead to distorted boundaries and merging of the objects. E.g. consider the apples image, here in the case of B=20, the block size is not large enough to capture a complete apple in the overlapping region, hence in the overlapping region, we can see a lot of apples merging with each other. A very large block size is also not preferable since it reduces the number of patches we select from which means that there is less chance of adjacent patches matching with each other, hence at the boundaries of patches we will observe discontinuity.
+\begin{figure*}[h]
+    \centering
+    \begin{subfigure}[h]{0.2\textwidth}
+        \centering
+        \includegraphics[scale=0.25]{../results/syn/out_jute_B_20.png}
+        \caption{B=20}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.25]{../results/syn/out_jute_B_30.png}
+       \caption{B=30}
+   \end{subfigure}
+   \hfill
+   \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.25]{../results/syn/out_jute_B_40.png}
+       \caption{B=40}
+   \end{subfigure}
+   \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.25]{../results/syn/out_jute_B_50.png}
+       \caption{B=50}
+   \end{subfigure}
+   \caption{Effect of block size on Jute}
+   \label{fig:ap_bs}
+\end{figure*}
+
+\begin{figure*}[h]
+    \centering
+    \begin{subfigure}[h]{0.2\textwidth}
+        \centering
+        \includegraphics[scale=0.15]{../results/syn/out_cans_B_20.png}
+        \caption{B=20}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.15]{../results/syn/out_cans_B_30.png}
+       \caption{B=30}
+   \end{subfigure}
+   \hfill
+   \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.15]{../results/syn/out_cans_B_40.png}
+       \caption{B=40}
+   \end{subfigure}
+   \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.15]{../results/syn/out_cans_B_50.png}
+       \caption{B=50}
+   \end{subfigure}
+   \caption{Effect of block size on Cans}
+   \label{fig:cans_bs}
+\end{figure*}
+
+\begin{figure*}[h]
+    \centering
+    \begin{subfigure}[h]{0.2\textwidth}
+        \centering
+        \includegraphics[scale=0.15]{../results/syn/out_brick_bw_B_20.png}
+        \caption{B=20}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.15]{../results/syn/out_brick_bw_B_30.png}
+       \caption{B=30}
+   \end{subfigure}
+   \hfill
+   \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.15]{../results/syn/out_brick_bw_B_40.png}
+       \caption{B=40}
+   \end{subfigure}
+   \begin{subfigure}[h]{0.2\textwidth}
+       \centering
+       \includegraphics[scale=0.15]{../results/syn/out_brick_bw_B_50.png}
+       \caption{B=50}
+   \end{subfigure}
+   \caption{Effect of block size on Bricks}
+   \label{fig:brick_bs}
+\end{figure*}
+
+% \begin{table}[!th]
+% \begin{center}
+% \begin{tabular}{|l|c|}
+% \hline
+% Situation & Reward \\
+% \hline\hline
+% Win (finish food) & +500 \\
+% Lose (eaten by ghost) & -500 \\
+% Eat food & +10\\
+% Consume ghost & +200\\
+% Idle/no food & -1\\
+% \hline
+% \end{tabular}
+% \end{center}
+% \caption{Game parameters for Q-Learning}
+% \end{table}
+% The features chosen for training the Approximate Q-Learning Network are: bias, number\_of\_ghosts\_1\_step\_away, distance\_to\_closest\_food
+% \begin{table}[!th]
+% \begin{center}
+% \begin{tabular}{|l|c|c|c|c|}
+% \hline
+% Approach & Grid size & Avg Score & \#Epochs & Time (train)\\
+% \hline\hline
+% AQL & mediumClassic & 1202.7 & 50 & 5m 45s\\
+% AQL & mediumGrid & 526.4 & 50 & 32s \\
+% QL & smallGrid & 499.5 & 2000 & 1m 24s\\
+% \hline
+% \end{tabular}
+% \end{center}
+% \caption{Some simulations}
+% \label{tab:qlres}
+% \end{table}
+
+
+% \begin{figure}[h]
+% \begin{center}
+% \includegraphics[scale=0.25]{resources/game_preview.png}
+% \end{center}
+% \vspace{-0.2em}
+% \caption{Pac-Man during Training}
+% \label{fig:basic}
+% \end{figure}
+\clearpage
+\subsection{Transfer}
+Here, we study the effect of changing block size on the texture transfer result. When the block size is small, content preservation is more because the overlapping region more accurately represents the approximate intensity of the complete block hence matching that leads to a result which closely resembles the target image content. However, a small block size is not enough to capture the complete texture of the image as we saw in texture synthesis, hence the texture of the image is better preserved when the block size is larger. Hence, there is a tradeoff between content preservation and texture preservation and hence the block size must be tuned appropriately to get visually pleasing results.
+
+We also study the output images obtained after each iteration of the algorithm. In the earlier iterations, a small value of $\alpha_{i}$ is used which means that the content preservation will be more but there will be some artifacts in the boundary of the patches and the texture will not be very clear. This is because the error weight given to matching the overlapping region with the previously places blocks is low, hence we will observe discontinuity in the edges of the patches. As we reach the later iterations, this quantity $\alpha_{i}$ is gradually increased which removes these boundary artifacts and leads to a better image texture and continuity while sacrificing a bit on the content preservation. Hence, the number of iterations must also be tuned properly for superior results.
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 4cm 2cm 2cm}, clip, scale=0.5]{../results/bsize/inp_rice_bill.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Rice-Bill input}
+    \label{fig:rice_bill}
+\end{figure*}
+
+% Block Size
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/bsize/res_rice_bill_bdr_0_800000_iter_5.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Rice-Bill, Block Size, B decay rate = 0.8}
+    \label{fig:rice_bill_bs}
+\end{figure*}
+
+% Changes with iteration
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/iters/res_rice_bill_b_20_bdr_0_800000.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Rice-Bill, Iterations, Block size=20, B decay rate = 0.8}
+    \label{fig:rice_bill_iter}
+\end{figure*}
+
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 4cm 2cm 2cm}, clip, scale=0.5]{../results/bsize/inp_rice_girl.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Rice-Girl input}
+    \label{fig:rice_girl}
+\end{figure*}
+
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/bsize/res_rice_girl_bdr_0_700000_iter_5.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Rice-Girl, Block Size, B decay rate = 0.7}
+    \label{fig:rice_girl_bs}
+\end{figure*}
+
+% Changes with iteration
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/iters/res_rice_girl_b_20_bdr_0_800000.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Rice-Girl, Iterations, Block size=20, B decay rate = 0.8}
+    \label{fig:rice_girl_iter}
+\end{figure*}
+
+
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 4cm 2cm 2cm}, clip, scale=0.5]{../results/bsize/inp_orange_pear.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Orange-Pear input}
+    \label{fig:or_pear}
+\end{figure*}
+
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/bsize/res_orange_pear_bdr_0_900000_iter_5.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Orange-Pear, Block Size, B decay rate = 0.9}
+    \label{fig:orange_pear_bs}
+\end{figure*}
+
+% Changes with iteration
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[trim={2cm 6cm 2cm 4cm}, clip, scale=0.9]{../results/iters/res_orange_pear_b_20_bdr_0_800000.png}
+    \end{center}
+    \vspace{-0.2em}
+    \caption{Orange-Pear, Iterations, Block size=20, B decay rate = 0.8}
+    \label{fig:or_pear_iter}
+\end{figure*}
+
 \end{document}

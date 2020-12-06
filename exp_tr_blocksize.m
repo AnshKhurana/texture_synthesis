@@ -6,13 +6,13 @@ warning('off', 'all');
 tic;
 data_path = 'data/';
 results_dir = 'results/bsize/';
-texture_images = {'orange'};
-content_images =  {'potato', 'pear'};
+texture_images = {'text'};
+content_images =  {'girl'};
 
 
 % show optimal results over iterations
 B_choices=[10,20,30,40];
-B_decay_rate_choices = [0.9, 0.8, 0.7];
+B_decay_rate_choices = [0.9, 0.8];
 num_passes=5;
 for ti = texture_images
     for ci = content_images
