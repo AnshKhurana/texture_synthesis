@@ -1,9 +1,0 @@
-function [] = convert_rgb(img_path, out_path)
-[X, map] = imread(img_path);
-ti = ind2rgb(X, map);
-if (length(size(ti)) < 3)
-    ti = repmat(ti, 1,1, 3);
-end
-% ti = im2double(imread(img_path));
-imwrite(ti, out_path);
-end

@@ -26,7 +26,7 @@
 \begin{document}
 
 %%%%%%%%% TITLE
-\title{Texture Synthesis and Style Transfer}
+\title{Image Quilting for Texture Synthesis and Transfer}
 
 \author{Aman Kansal\\
 170050027\\
@@ -90,6 +90,7 @@ In the Approximate Q-Learning approach, the model the agent learns weights for f
 %-------------------------------------------------------------------------
 \subsection{Neural Network Style Transfer}
 % Insert picture of the model
+Not doing this anymore.
 Deep Learning does away with the need to handcraft features for the states. In the Deep Q-Learning based approach, the state is captured by an image of the current situation of the game. %We create an image representing the current state of the game every four frames which are blended together and preprocessed.
 Deep Q-Learning is an extension of function approximation for Q-Learning. Deep Q-Learning uses a deep neural network to approximate the Q values for every action, given the current state. Thus, the output layer of the Deep Q-Network has dimensions = $|A|$ (The number of actions). The best action after learning the network can be taken by calculating an argmax over the output layer. 
 
@@ -344,7 +345,7 @@ We have some amazing synthesis results below followed by transfer results.
     \hfill
     \begin{subfigure}[h]{0.33\textwidth}
         \centering
-        \includegraphics[trim={4.5cm 7cm 8.0cm 3cm}, clip, scale=1.5, width=\textwidth]{../results/syn_final/result_cans_B_40.png}
+        \includegraphics[trim={4.5cm 7cm 8.0cm 3cm}, clip, scale=1.5, width=\textwidth]{../results/syn_final/result_cans_B_80.png}
         \caption{Cans}
         \label{fig:cans_res}
     \end{subfigure}
@@ -424,7 +425,7 @@ We have some amazing synthesis results below followed by transfer results.
 \hfill
 \begin{subfigure}[h]{0.33\textwidth}
    \centering
-   \includegraphics[trim={4.5cm 7cm 8.0cm 3cm}, clip, scale=1.5, width=\textwidth]{../results/syn_final/result_stone_B_60.png}
+   \includegraphics[trim={4.5cm 7cm 8.0cm 3cm}, clip, scale=1.5, width=\textwidth]{../results/syn_final/result_stone_B_90.png}
    \caption{Stone}
    \label{fig:apple_res}
 \end{subfigure}   
