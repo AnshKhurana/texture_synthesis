@@ -51,7 +51,7 @@ for pass = 1:num_passes
                     [patch, patch_color] = findPatch_advanced(in, in_color, mask, ref, tol, target_ref, overlap_loss_weight);
                     errors = mask.*((ref-patch).^2);
                     errors = errors(:,1:L);
-                    [cost, dir, boundary] = dp(errors);
+                    [boundary] = dp(errors);
                     boundary = [boundary zeros(B+L, B)];
                 
                 elseif j==1
@@ -59,7 +59,7 @@ for pass = 1:num_passes
                     [patch, patch_color] = findPatch_advanced(in, in_color, mask, ref, tol, target_ref, overlap_loss_weight);
                     errors = mask.*((ref-patch).^2);
                     errors = errors(1:L, :);
-                    [cost, dir, boundary] = dp(errors.');
+                    [boundary] = dp(errors.');
                     boundary = [boundary zeros(B+L, B)];
                     boundary = boundary.';
                 
@@ -70,24 +70,20 @@ for pass = 1:num_passes
                     errors = mask.*((ref-patch).^2);
                     
                     errors_h = errors(:,1:L);
-                    [cost, dir, boundary_h] = dp(errors_h);
+                    [boundary_h] = dp(errors_h);
                     boundary_h = [boundary_h zeros(B+L, B)];
                     
                     errors_v = errors(1:L, :);
-                    [cost, dir, boundary_v] = dp(errors_v.');
+                    [boundary_v] = dp(errors_v.');
                     boundary_v = [boundary_v zeros(B+L, B)];
                     boundary_v = boundary_v.';
                     
                     boundary = min(boundary_h + boundary_v, 1);
                 end
                 
-                
                 boundary = imgaussfilt(boundary,boundary_gaussian_variance);
                 out((i-1)*B+1:i*B+L, (j-1)*B+1:j*B+L) = boundary.*ref + (1-boundary).*patch;
-                boundary_3d = repmat(boundary,[1,1,3]);
-                out_color((i-1)*B+1:i*B+L, (j-1)*B+1:j*B+L,:) = boundary_3d.*ref_color + (1-boundary_3d).*patch_color;
-                
-                
+                out_color((i-1)*B+1:i*B+L, (j-1)*B+1:j*B+L,:) = boundary.*ref_color + (1-boundary).*patch_color;
                 
             end
         end

@@ -1,4 +1,4 @@
-function [cost, dir, boundary] = dp(errors)
+function [boundary] = dp(errors)
     cost = zeros(size(errors));
     dir = zeros(size(errors));
     [r, c] = size(errors);

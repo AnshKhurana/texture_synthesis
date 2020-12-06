@@ -32,7 +32,7 @@ for i=1:r
                 [patch, patch_color] = findPatch(in, in_color, mask, ref, tol);
                 errors = mask.*((ref-patch).^2);
                 errors = errors(:,1:L);
-                [cost, dir, boundary] = dp(errors);
+                [boundary] = dp(errors);
                 boundary = [boundary zeros(B+L, B)];
                 binary_boundary = boundary.*(1-[boundary(:,2:B+L) zeros(B+L, 1)]);
             
@@ -41,7 +41,7 @@ for i=1:r
                 [patch, patch_color] = findPatch(in, in_color, mask, ref, tol);
                 errors = mask.*((ref-patch).^2);
                 errors = errors(1:L, :);
-                [cost, dir, boundary] = dp(errors.');
+                [boundary] = dp(errors.');
                 boundary = [boundary zeros(B+L, B)];
                 binary_boundary = boundary.*(1-[boundary(:,2:B+L) zeros(B+L, 1)]);                
                 boundary = boundary.';
@@ -54,12 +54,12 @@ for i=1:r
                 errors = mask.*((ref-patch).^2);
                 
                 errors_h = errors(:,1:L);
-                [cost, dir, boundary_h] = dp(errors_h);
+                [boundary_h] = dp(errors_h);
                 boundary_h = [boundary_h zeros(B+L, B)];
                 binary_boundary_h = boundary_h.*(1-[boundary_h(:,2:B+L) zeros(B+L, 1)]);
                 
                 errors_v = errors(1:L, :);
-                [cost, dir, boundary_v] = dp(errors_v.');
+                [boundary_v] = dp(errors_v.');
                 boundary_v = [boundary_v zeros(B+L, B)];
                 binary_boundary_v = boundary_v.*(1-[boundary_v(:,2:B+L) zeros(B+L, 1)]);
                 boundary_v = boundary_v.';
@@ -69,12 +69,9 @@ for i=1:r
                 binary_boundary = min(binary_boundary_h + binary_boundary_v, 1);
             end
             
-            
-            
             out((i-1)*B+1:i*B+L, (j-1)*B+1:j*B+L) = boundary.*ref + (1-boundary).*patch;
             out_color((i-1)*B+1:i*B+L, (j-1)*B+1:j*B+L,:) = boundary.*ref_color + (1-boundary).*patch_color;
             disp_boundary((i-1)*B+1:i*B+L, (j-1)*B+1:j*B+L) = binary_boundary;
-            
             
         end
     end
