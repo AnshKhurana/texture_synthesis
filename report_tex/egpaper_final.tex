@@ -81,18 +81,64 @@ One hyperparameter is the block size B, that has to be tuned separately for all 
 % \end{align*}
 %-------------------------------------------------------------------------
 \subsection{Texture Transfer}
+In the task of texture transfer, the input is taken in form
+of small piece of texture and a target image. The aim is to
+reconstruct the target image from small patches of the given
+texture so that the high level information in the image is
+preserved while giving it a textured appearance similar to
+the input texture.
 
-In the Approximate Q-Learning approach, the model the agent learns weights for features of states, where many states might share the same features. Function approximation learns the weights of different features during training. Using function approximation for parameterizing the problem of Q-Learning significantly reducing training time. It is important to recognize significant features on which the expected gain for the state will depend. For example, for approximating the Q-function for the Pac-Man game would depend upon features like Distance to closest ghost or dot, number of ghosts nearby, proximity to walls etc. Considering a linear model in the features, the update equations for the weights is given by:
-% \vspace{-10pt}
-% \begin{align*}
+\subsubsection{Algorithm}
+The algorithm for this task is similar to the quilting algo-
+rithm, except that the final image is constructed in multiple
+iterations, each producing a better output image than the
+previous one. The output image is of the same dimensions
+as the input target image. Thus, each patch in the output im-
+age corresponds to a patch in the target image. After placing
+the first patch (at the top-left corner say) in the output im-
+age, we progressively place the next patch, stochastically
+minimizing the summation of following two losses -
 
-%     Q(s, a) &= \sum_{i=1}^{n} f_{i}(s, a) w_{i}
-    
-%     \text {difference}=&\left(r+\gamma \max _{a^{\prime}} Q\left(s^{\prime}, a^{\prime}\right)\right)-Q(s, a)
-    
-%      &w_{i} &\leftarrow w_{i}+\alpha \cdot  \text {difference} \cdot f_{i}(s, a) 
-% \end{align*}
-%-------------------------------------------------------------------------
+\begin{itemize}
+    \item SSE (sum of squared errors) between the pixels in the
+    new patch and those in the surrounding patches, in the
+    overlap region. Call it SSE1
+    \item SSE between the pixels in the new patch and the pixels
+    in the corresponding patch of the target image. Call it
+    SSE2
+\end{itemize}
+\newline
+Mathematically the minimized loss is -
+\begin{align}
+L = \alpha *SSE1 + (1 - \alpha) *SSE2\notag
+\end{align}
+The paramter α, in i th iteration is heuristically kept
+as $\alpha_i = 0.8*\frac{i-1}{N-1}+0.1$
+where $N$ is the total number
+of iterations and is ideally kept between 3 to 5. The size
+of the patch is also reduced in each successive iteration
+in a geometric fashion, i.e., $B_{i+1} = B_i *d$ where $d$ is
+the decay rate for patch size and a hyperparameter for
+the algorithm. In the successive iteration we replace the
+target image by the image obtained in the previous iteration.
+\newline
+\newline
+\textbf{Intuition behind iterative algorithm} We can observe
+that in the successive iterations, in addition to reducing
+the patch size, we alter the relative weights for the two
+SSE’s adding more weight to maintaining continuity
+accross edges. The explanation behind it is as follows -
+We choose larger patches first (although still small enough
+to be able to replicate target image), so as to preserve the
+important components in the texture. This might reflect
+some discountinuities at the edges of the block. In the
+subsequent iterations, when smaller patches are being
+chosen then the patches inside the previously larger patch
+would tend to remain same (as they match the target imageperfectly and are inherently continuous), but the patches at
+the boundary would be chosen so as the remain closer to
+the previously chosen patch, while enhancing continuity
+accross the boundary.
+
 \subsection{Neural Network Style Transfer}
 % Insert picture of the model
 Not doing this anymore.
