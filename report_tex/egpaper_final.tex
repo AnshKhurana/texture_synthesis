@@ -74,7 +74,7 @@ The patch-based synthesis algorithm in this approach picks small blocks from the
 One hyperparameter is the block size B, that has to be tuned separately for all images. In all experiments, the width of the overlapping region was taken to be 1/3 of block size.
 \begin{figure}[h]
 \begin{center}
-\includegraphics[trim={9cm 15cm 2cm 8cm},clip, scale=0.38]{resources/apple_boundary_example.png}
+\includegraphics[trim={32cm 34cm 28cm 18cm},clip, scale=0.16]{../rice_boundary_example.png}
 \end{center}
 \vspace{-0.2em}
 \caption{Boundary Cuts in Synthesis of Apple image}
@@ -345,16 +345,16 @@ We are able to reproduce results similar in quality when compared to the ones pr
     \centering
     \begin{subfigure}[h]{0.45\textwidth}
         \centering
-        \includegraphics[trim={2cm 4cm 2cm 3cm}, clip, scale=0.5]{../results/bsize/inp_orange_potato.png}
+        \includegraphics[trim={2cm 4cm 2cm 3cm}, clip, scale=0.5]{../results/bsize/inp_br_pattern_girl.png}
         \caption{Input}
     \end{subfigure}
     \hfill
     \begin{subfigure}[h]{0.5\textwidth}
        \centering
-       \includegraphics[scale=0.4]{../results/bsize/out_orange_potato_B_10_bdr_0_700000.png}
+       \includegraphics[scale=0.4]{../results/bsize/out_br_pattern_girl_B_10_bdr_0_900000.png}
        \caption{Output}
    \end{subfigure}
-   \caption{Result for texture Orange transferred to Potato image}
+   \caption{Result for texture Pattern transferred to Girl image}
    \label{fig:ap_bs}
 \end{figure*}
 \vspace{-80pt}
@@ -394,27 +394,27 @@ The effect of block size can be seen in figures \ref{fig:ap_bs}, \ref{fig:cans_b
     \centering
     \begin{subfigure}[h]{0.2\textwidth}
         \centering
-        \includegraphics[scale=0.25]{../results/syn/out_jute_B_20.png}
+        \includegraphics[scale=0.25]{../results/syn/out_apples_B_20.png}
         \caption{B=20}
     \end{subfigure}
     \hfill
     \begin{subfigure}[h]{0.2\textwidth}
        \centering
-       \includegraphics[scale=0.25]{../results/syn/out_jute_B_30.png}
+       \includegraphics[scale=0.25]{../results/syn/out_apples_B_30.png}
        \caption{B=30}
    \end{subfigure}
    \hfill
    \begin{subfigure}[h]{0.2\textwidth}
        \centering
-       \includegraphics[scale=0.25]{../results/syn/out_jute_B_40.png}
+       \includegraphics[scale=0.25]{../results/syn/out_apples_B_40.png}
        \caption{B=40}
    \end{subfigure}
    \begin{subfigure}[h]{0.2\textwidth}
        \centering
-       \includegraphics[scale=0.25]{../results/syn/out_jute_B_50.png}
+       \includegraphics[scale=0.25]{../results/syn/out_apples_B_50.png}
        \caption{B=50}
    \end{subfigure}
-   \caption{Effect of block size on Jute}
+   \caption{Effect of block size on Apples}
    \label{fig:ap_bs}
 \end{figure*}
 
